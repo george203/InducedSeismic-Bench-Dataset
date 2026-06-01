@@ -1,0 +1,38 @@
+{
+  "_comment": "Fully annotated example item from InducedSeismic-Bench. This is POHANG-T1-Q1, the verbatim item from the dataset draft.",
+  "item_id": "POHANG-T1-Q1",
+  "case_id": "POHANG",
+  "case_name": "Pohang, South Korea, 2017",
+  "operation_type": "geothermal",
+  "region": "South Korea",
+  "tier": 1,
+  "tier_label": "Weakly suggestive",
+  "evidence_components": [
+    "spatial_proximity",
+    "temporal_correlation",
+    "background_seismicity_absence"
+  ],
+  "evidence_description": "A magnitude 5.5 earthquake occurred 0.6 km from the surface location of a geothermal stimulation well. Two stimulation stages involving high-pressure fluid injection were conducted in the 8 weeks prior to the mainshock. No earthquakes of M > 2.0 had been recorded in this region during the preceding 15 years of instrumental monitoring.",
+  "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+  "reference_confidence": 1,
+  "reference_confidence_label": "Weakly suggestive",
+  "required_caveats": [
+    "focal_mechanism_absent",
+    "depth_not_compared_to_injection_horizon",
+    "pressure_diffusion_not_modeled",
+    "alternative_natural_trigger_not_ruled_out"
+  ],
+  "optional_caveats": [
+    "injection_volume_pressure_not_analyzed"
+  ],
+  "annotation_notes": "Note: The slide deck version of this item labels reference_confidence as 2 (Plausible). The dataset draft table labels it 1 (Weakly suggestive). The Tier 1 → confidence 1 mapping is used here as canonical; the discrepancy should be flagged for adjudication.",
+  "_annotation_rationale": {
+    "tier_assignment": "Only Tier 1 criteria are present: spatial_proximity (0.6 km distance) + temporal_correlation (8 weeks, 2 stimulation stages) + background_seismicity_absence. No b-value, rate change, depth correlation, focal mechanism, or pressure diffusion data are mentioned.",
+    "required_caveats_rationale": {
+      "focal_mechanism_absent": "No focal mechanism solutions are mentioned; fault geometry is unknown and could weaken or strengthen the case.",
+      "depth_not_compared_to_injection_horizon": "The earthquake depth is not mentioned or compared to the stimulated reservoir interval.",
+      "pressure_diffusion_not_modeled": "No hydraulic diffusivity model connecting injection history to the earthquake timing and location is present.",
+      "alternative_natural_trigger_not_ruled_out": "A natural stress perturbation coincidentally activating a pre-existing fault has not been formally excluded."
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "_note": "Placeholder file. Run: python evaluation/evaluate.py --model gemini --items data/dataset.json --output results/",
+  "model": "gemini",
+  "responses": []
+}

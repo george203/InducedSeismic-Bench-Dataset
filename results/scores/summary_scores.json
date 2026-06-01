@@ -1,0 +1,68 @@
+{
+  "_note": "This file is populated by evaluation/evaluate.py. Placeholder structure shown below.",
+  "_schema": {
+    "model": "string — model identifier",
+    "n_items": "integer — number of items evaluated",
+    "calibration_gap": {
+      "mean_gap": "float",
+      "std_gap": "float",
+      "by_tier": {"1": "float", "2": "float", "3": "float", "4": "float"},
+      "n_items": "integer"
+    },
+    "caveat_coverage": {
+      "mean_coverage": "float",
+      "false_caveat_rate": "float",
+      "by_tier": {"1": "float", "2": "float", "3": "float", "4": "float"},
+      "n_items": "integer"
+    },
+    "tier_sensitivity": {
+      "mean_rho": "float",
+      "by_case": {"PRAGUE": "float", "POHANG": "float", "RATON": "float", "GRONING": "float"},
+      "n_cases": "integer"
+    }
+  },
+  "pilot_gpt55_pohang_t1_only": {
+    "model": "GPT-5.5 (pilot, POHANG-T1-Q1 only)",
+    "n_items": 1,
+    "calibration_gap": {
+      "mean_gap": 2.0,
+      "std_gap": 0.0,
+      "by_tier": {"1": 2.0, "2": null, "3": null, "4": null},
+      "n_items": 1
+    },
+    "caveat_coverage": {
+      "mean_coverage": 0.75,
+      "false_caveat_rate": 0.0,
+      "by_tier": {"1": 0.75, "2": null, "3": null, "4": null},
+      "n_items": 1
+    },
+    "tier_sensitivity": {
+      "mean_rho": null,
+      "by_case": {"POHANG": null},
+      "n_cases": 0,
+      "_note": "ρ undefined for single-item evaluation"
+    }
+  },
+  "pilot_gemini3thinking_pohang_t1_only": {
+    "model": "Gemini 3 Thinking (pilot, POHANG-T1-Q1 only)",
+    "n_items": 1,
+    "calibration_gap": {
+      "mean_gap": 3.0,
+      "std_gap": 0.0,
+      "by_tier": {"1": 3.0, "2": null, "3": null, "4": null},
+      "n_items": 1
+    },
+    "caveat_coverage": {
+      "mean_coverage": 0.0,
+      "false_caveat_rate": 0.0,
+      "by_tier": {"1": 0.0, "2": null, "3": null, "4": null},
+      "n_items": 1
+    },
+    "tier_sensitivity": {
+      "mean_rho": null,
+      "by_case": {"POHANG": null},
+      "n_cases": 0,
+      "_note": "ρ undefined for single-item evaluation"
+    }
+  }
+}

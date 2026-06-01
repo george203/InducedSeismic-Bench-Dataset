@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/george203/InducedSeismic-Bench/blob/main/data/schema.json",
+  "title": "InducedSeismic-Bench Item",
+  "description": "Schema for a single benchmark item in InducedSeismic-Bench",
+  "type": "object",
+  "required": [
+    "item_id",
+    "case_id",
+    "case_name",
+    "operation_type",
+    "region",
+    "tier",
+    "tier_label",
+    "evidence_components",
+    "evidence_description",
+    "question",
+    "reference_confidence",
+    "reference_confidence_label",
+    "required_caveats",
+    "optional_caveats",
+    "annotation_notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "item_id": {
+      "type": "string",
+      "description": "Unique item identifier. Format: {CASE_ID}-T{tier}-Q{question_number}",
+      "pattern": "^[A-Z]+-T[1-4]-Q[0-9]+$",
+      "examples": ["POHANG-T1-Q1", "PRAGUE-T4-Q1"]
+    },
+    "case_id": {
+      "type": "string",
+      "description": "Short case identifier (uppercase, no spaces)",
+      "pattern": "^[A-Z]+$",
+      "examples": ["POHANG", "PRAGUE", "RATON", "GRONING"]
+    },
+    "case_name": {
+      "type": "string",
+      "description": "Human-readable case name including location and year or date range",
+      "examples": ["Pohang, South Korea, 2017", "Prague, Oklahoma, 2011"]
+    },
+    "operation_type": {
+      "type": "string",
+      "description": "Type of industrial operation associated with the seismicity",
+      "enum": [
+        "wastewater_disposal",
+        "hydraulic_fracturing",
+        "geothermal",
+        "reservoir_impoundment"
+      ]
+    },
+    "region": {
+      "type": "string",
+      "description": "Geographic region of the seismicity (country, state, or broader area)",
+      "examples": ["South Korea", "Oklahoma, United States", "Netherlands"]
+    },
+    "tier": {
+      "type": "integer",
+      "description": "Evidence tier (1 = weakest, 4 = strongest)",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "tier_label": {
+      "type": "string",
+      "description": "Human-readable label for the evidence tier",
+      "enum": [
+        "Weakly suggestive",
+        "Plausible",
+        "Moderately supported",
+        "Strong case"
+      ]
+    },
+    "evidence_components": {
+      "type": "array",
+      "description": "List of evidence criteria present in this item, drawn from the controlled vocabulary",
+      "items": {
+        "type": "string",
+        "enum": [
+          "spatial_proximity",
+          "temporal_correlation",
+          "b_value_shift",
+          "seismicity_rate_change",
+          "depth_correlation",
+          "focal_mechanism",
+          "pressure_diffusion_model",
+          "background_seismicity_absence"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "evidence_description": {
+      "type": "string",
+      "description": "Anonymized 150–300 word description of the case evidence shown to the model. Must not contain location names, operator names, or dates specific enough to identify the case.",
+      "minLength": 100
+    },
+    "question": {
+      "type": "string",
+      "description": "The exact question prompt shown to the model after the evidence description"
+    },
+    "reference_confidence": {
+      "type": "integer",
+      "description": "Expert reference confidence score (1–4, corresponding to tier)",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "reference_confidence_label": {
+      "type": "string",
+      "description": "Human-readable label for the reference confidence score",
+      "enum": [
+        "Weakly suggestive",
+        "Plausible",
+        "Moderately supported",
+        "Strong case"
+      ]
+    },
+    "required_caveats": {
+      "type": "array",
+      "description": "Caveats that a well-calibrated response must mention for this item",
+      "items": {
+        "type": "string",
+        "enum": [
+          "focal_mechanism_absent",
+          "depth_not_compared_to_injection_horizon",
+          "pressure_diffusion_not_modeled",
+          "alternative_natural_trigger_not_ruled_out",
+          "generalizability_limited",
+          "injection_volume_pressure_not_analyzed",
+          "fault_geometry_unknown",
+          "stress_state_not_characterized",
+          "inter_annotator_disagreement_flagged"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "optional_caveats": {
+      "type": "array",
+      "description": "Caveats that are appropriate but not required for scoring purposes",
+      "items": {
+        "type": "string",
+        "enum": [
+          "focal_mechanism_absent",
+          "depth_not_compared_to_injection_horizon",
+          "pressure_diffusion_not_modeled",
+          "alternative_natural_trigger_not_ruled_out",
+          "generalizability_limited",
+          "injection_volume_pressure_not_analyzed",
+          "fault_geometry_unknown",
+          "stress_state_not_characterized",
+          "inter_annotator_disagreement_flagged"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "annotation_notes": {
+      "type": "string",
+      "description": "Annotator notes on ambiguity, adjudication decisions, or edge cases. May be empty string."
+    }
+  }
+}

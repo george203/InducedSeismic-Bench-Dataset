@@ -1,0 +1,1893 @@
+[
+  {
+    "item_id": "PRAGUE-T1-Q1",
+    "case_id": "PRAGUE",
+    "case_name": "Prague, Oklahoma, 2011",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A series of earthquakes, including a mainshock exceeding magnitude 5, occurred in a region that had experienced little to no significant seismic activity in the decades prior to the events. The earthquake cluster is centered within approximately 5 kilometers of a cluster of active wastewater disposal wells. These wells had been receiving increasing volumes of produced water from nearby oil extraction operations in the years preceding the seismicity onset. The timing of the increase in seismic activity broadly coincides with a documented ramp-up in disposal volumes at the nearest wells. The seismicity occurred along a mapped fault system in the area. No focal mechanism analysis has been conducted for the events in this sequence, and the hypocentral depths of the earthquakes have not been compared to the depths of the disposal intervals. No pressure diffusion modeling has been performed to assess whether injected fluid could have reached the fault at the times and locations of observed seismicity. The possibility that the fault was already near critically stressed and was triggered by natural stress fluctuations has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PRAGUE-T2-Q1",
+    "case_id": "PRAGUE",
+    "case_name": "Prague, Oklahoma, 2011",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift"
+    ],
+    "evidence_description": "A series of earthquakes, including a mainshock exceeding magnitude 5, occurred in a region that had experienced little to no significant seismic activity in the decades prior to the events. The earthquake cluster is centered within approximately 5 kilometers of a cluster of active wastewater disposal wells that had been receiving increasing volumes of produced water from nearby oil extraction operations. The timing of the increased seismic activity broadly coincides with a documented ramp-up in disposal volumes. Statistical analysis of the magnitude-frequency distribution of the seismicity cluster reveals a shift in the b-value compared to the regional tectonic background. Specifically, the b-value of the induced candidate cluster is elevated relative to regional estimates, a pattern that has been associated with fluid-modulated seismicity in other documented cases and is consistent with pore pressure perturbation reducing effective normal stress on pre-existing faults. No focal mechanism analysis has been conducted for the events in this sequence, and hypocentral depths have not been compared to the disposal interval depths. No pressure diffusion modeling has been performed to assess pore pressure propagation to the observed hypocenter locations.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PRAGUE-T3-Q1",
+    "case_id": "PRAGUE",
+    "case_name": "Prague, Oklahoma, 2011",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A series of earthquakes, including a mainshock exceeding magnitude 5, occurred near a cluster of active wastewater disposal wells. The timing of increased seismic activity broadly coincides with a ramp-up in disposal volumes at the nearest wells, and statistical analysis of the magnitude-frequency distribution shows a b-value shift consistent with fluid-modulated seismicity. Relocated hypocenters for the foreshock, mainshock, and aftershock sequence place the majority of events at depths consistent with the stratigraphic interval receiving injected fluids at the nearby disposal wells, indicating that the seismicity is occurring at depths where pore pressure perturbation from injection is plausible. Focal mechanism solutions derived for the larger events in the sequence indicate strike-slip faulting geometry. The inferred fault planes are consistent with the orientation of a mapped fault system in the area and with the regional tectonic stress field, supporting the interpretation that injection-induced pore pressure increase reactivated a pre-existing, optimally oriented fault. Pressure diffusion modeling connecting injection history to the observed seismicity migration has not been completed. A natural stress trigger coincidentally activating the same fault structure has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PRAGUE-T4-Q1",
+    "case_id": "PRAGUE",
+    "case_name": "Prague, Oklahoma, 2011",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A series of earthquakes, including a mainshock exceeding magnitude 5, occurred near a cluster of active wastewater disposal wells. The timing of increased seismic activity coincides with a ramp-up in disposal volumes; b-value analysis is consistent with fluid-modulated seismicity; relocated hypocenters cluster within the depth range of the disposal interval; and focal mechanism solutions indicate strike-slip reactivation of a pre-existing fault consistent with the regional stress field. Additionally, hydraulic diffusivity modeling of the injection history has been performed. The modeled pressure diffusion front, using a diffusivity value consistent with the local basement geology, reaches the hypocenter zone at times consistent with the observed onset and spatial migration of seismicity. The modeled front is able to account for both the spatial extent of the seismicity cluster and the timing of the largest events relative to injection rate changes. The convergence of spatial, temporal, depth, focal mechanism, and pressure propagation evidence provides a self-consistent picture of fault reactivation driven by pore pressure increase from wastewater disposal. Uncertainty remains regarding the specific geometry of the reactivated fault segment at depth and the generalizability of this diffusivity estimate to the broader fault system.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "POHANG-T1-Q1",
+    "case_id": "POHANG",
+    "case_name": "Pohang, South Korea, 2017",
+    "operation_type": "geothermal",
+    "region": "South Korea",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A magnitude 5.5 earthquake occurred 0.6 km from the surface location of a geothermal stimulation well. Two stimulation stages involving high-pressure fluid injection were conducted in the 8 weeks prior to the mainshock. No earthquakes of M > 2.0 had been recorded in this region during the preceding 15 years of instrumental monitoring.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": "Note: The slide deck version of this item labels reference_confidence as 2 (Plausible). The dataset draft table labels it 1 (Weakly suggestive). The Tier 1 \u2192 confidence 1 mapping is used here as canonical; the discrepancy should be flagged for adjudication."
+  },
+  {
+    "item_id": "POHANG-T2-Q1",
+    "case_id": "POHANG",
+    "case_name": "Pohang, South Korea, 2017",
+    "operation_type": "geothermal",
+    "region": "South Korea",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A magnitude 5.5 earthquake occurred 0.6 km from the surface location of a geothermal stimulation well. Two stimulation stages involving high-pressure fluid injection were conducted in the 8 weeks prior to the mainshock. No earthquakes of M > 2.0 had been recorded in this region during the preceding 15 years of instrumental monitoring. Following the first stimulation stage, a sharp and anomalous increase in local seismicity rate was observed: multiple events of M > 2.0 occurred in the weeks immediately after injection commenced, a level of activity with no precedent in the prior monitoring record for this region. This seismicity rate change is temporally linked to the stimulation operations \u2014 the elevated rate began after the first injection stage and persisted through subsequent stimulation activity. The spatial footprint of the induced microseismic cloud also expanded over successive stimulation stages. No focal mechanism analysis has been performed on the events in the sequence prior to the mainshock, and hypocentral depths have not been compared to the depth of the stimulated reservoir interval. The potential for a coincident natural stress perturbation triggering the seismicity has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "POHANG-T3-Q1",
+    "case_id": "POHANG",
+    "case_name": "Pohang, South Korea, 2017",
+    "operation_type": "geothermal",
+    "region": "South Korea",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A magnitude 5.5 earthquake occurred 0.6 km from the surface location of a geothermal stimulation well, in a region with no recorded M > 2.0 events in the 15 years prior to operations. A sharp increase in seismicity rate was observed after the first stimulation stage, with multiple M > 2.0 events occurring where none had been recorded before. Relocated hypocenters for the foreshock sequence and the mainshock place events within the depth range of the stimulated reservoir interval, indicating that the seismicity is occurring at the depths where pore pressure perturbation from high-pressure fluid injection is physically plausible. Focal mechanism solutions derived for the mainshock and the larger foreshocks indicate reverse faulting. The inferred fault geometry is consistent with the regional compressive stress regime and with the stress changes expected from increased pore pressure at depth \u2014 specifically, pore pressure increase reduces effective normal stress on faults oriented favorably for reverse slip in the local stress field. The combination of correct depth, correct fault type, and the injection-compatible stress change supports a causal interpretation. However, pressure diffusion modeling connecting the injection volume and timing to the observed spatial and temporal seismicity migration has not been completed, and a natural stress perturbation coincidentally triggering the fault at the time of injection operations cannot be fully excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited",
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "RATON-T1-Q1",
+    "case_id": "RATON",
+    "case_name": "Raton Basin, Colorado, 2001\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A sedimentary basin with historically low natural seismicity experienced an onset of earthquake swarm activity beginning in the late 1990s and continuing through the following decade. The basin hosts extensive industrial operations involving the extraction of natural gas from coal-bearing strata, with co-produced water disposed of via deep injection wells. The observed seismicity cluster is located within a few kilometers of active disposal wells operating in the basin. The onset and escalation of earthquake activity broadly coincides in time with the ramp-up of disposal operations as production in the basin expanded. Prior to the onset of disposal, the region had no documented history of earthquake swarms and a low regional seismicity rate. The seismicity includes events large enough to be felt by local residents. No focal mechanism analysis has been conducted to characterize the fault geometry of the events. Hypocentral depths have not been compared to the depths of the disposal intervals to assess whether the seismicity is occurring where injected fluids could reach. No pressure diffusion modeling has been performed connecting the injection history to the spatial or temporal distribution of seismicity. A natural explanation for the swarm activity \u2014 such as stress transfer from regional tectonics or fluid migration from natural sources \u2014 has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "RATON-T2-Q1",
+    "case_id": "RATON",
+    "case_name": "Raton Basin, Colorado, 2001\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift"
+    ],
+    "evidence_description": "A sedimentary basin with historically low natural seismicity experienced an onset of earthquake swarm activity beginning in the late 1990s and continuing through the following decade. The seismicity cluster is located within a few kilometers of active wastewater disposal wells associated with coal-bed methane production, and the onset of seismicity broadly coincides with ramp-up of disposal operations. Gutenberg-Richter analysis of the seismicity cluster reveals a b-value that departs significantly from the regional tectonic background estimate. The b-value of the candidate induced seismicity cluster is elevated relative to regional values, a pattern documented in other fluid-injection-related seismicity cases and interpreted as reflecting a reduction in differential stress or an increase in pore pressure reducing effective normal stress on fault populations. This statistical anomaly in the magnitude-frequency distribution strengthens the case for a fluid-related origin compared to a purely tectonic swarm, which would be expected to have a b-value consistent with the broader regional seismotectonic context. No focal mechanism analysis has been completed for the sequence. Hypocentral depths have not been compared to the disposal interval depths. No pressure diffusion modeling has been performed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GRONING-T1-Q1",
+    "case_id": "GRONING",
+    "case_name": "Groningen, Netherlands",
+    "operation_type": "reservoir_impoundment",
+    "region": "Netherlands",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "An earthquake cluster has developed over several decades in a region that hosts one of Europe's largest subsurface resource extraction operations. The spatial footprint of the seismicity closely corresponds to the areal extent of the production field, with earthquakes occurring predominantly within or immediately adjacent to the field boundary rather than in surrounding areas with comparable geological structure. The region had a very low background seismicity rate prior to and during the early phases of production; the emergence of felt earthquakes and their subsequent increase in frequency is temporally correlated with the duration and intensity of production operations over many decades. The largest events in the sequence have caused structural damage to buildings in the region and have been a subject of public concern and regulatory attention. No focal mechanism analysis has been systematically applied to determine whether the fault geometries of the events are consistent with stress changes induced by production. The depths of the earthquakes have not been formally compared to the producing reservoir interval to assess whether seismicity is occurring at reservoir level or in underlying basement rocks. No model connecting production-induced compaction or pressure depletion to the spatiotemporal distribution of seismicity has been presented. Alternative natural explanations for the spatial and temporal clustering have not been formally ruled out.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed",
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": "Groningen is notable for involving compaction-induced seismicity from gas extraction rather than fluid injection. The mechanism differs from injection-induced cases. This distinction should be flagged in the case documentation but the evidence description should not reveal it."
+  },
+  {
+    "item_id": "POHANG-T4-Q1",
+    "case_id": "POHANG",
+    "case_name": "Pohang, South Korea, 2017",
+    "operation_type": "geothermal",
+    "region": "South Korea",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A significant earthquake occurred less than one kilometer from the surface location of a geothermal stimulation well in a region with no recorded moderate seismicity during 15 prior years of instrumental monitoring. An anomalous increase in seismicity rate began after the first high-pressure injection stage, and relocated hypocenters cluster within the depth range of the stimulated reservoir interval. Focal mechanism solutions indicate reverse faulting consistent with the regional compressive stress regime and with stress changes expected from pore pressure increase on favorably oriented faults. Hydraulic diffusivity modeling of the complete injection history at both stimulation wells has been performed. Using diffusivity estimates consistent with the hydraulic properties of the stimulated basement interval, the modeled pore pressure front reaches the inferred fault zone within a timeframe consistent with the cumulative injected volumes and the observed onset of foreshock activity. The convergence of spatial proximity, temporal correlation, anomalous seismicity rate, depth-consistent hypocenters, compatible focal mechanisms, and a pressure diffusion front that mechanistically accounts for the timing and location of seismicity provides a self-consistent and physically grounded case for attribution to the geothermal stimulation operations.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "RATON-T3-Q1",
+    "case_id": "RATON",
+    "case_name": "Raton Basin, Colorado, 2001\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A sedimentary basin with historically low natural seismicity experienced a sustained earthquake swarm beginning in the late 1990s and continuing through the following decade, with the largest event exceeding magnitude 5. The seismicity cluster is located within several kilometers of active wastewater disposal wells associated with coal-bed methane production operations, and the onset broadly coincides with ramp-up of injection volumes. Gutenberg-Richter analysis shows an elevated b-value relative to the regional tectonic background, consistent with fluid-modulated seismicity. Relocated hypocenters for the cluster reveal a systematic depth distribution: events concentrate at depths consistent with the lowermost sedimentary formations and the upper crystalline basement where pore pressure perturbation from deep disposal is physically plausible. Focal mechanism solutions for the larger events in the sequence indicate predominantly strike-slip faulting, with inferred fault planes consistent with the regional tectonic stress orientation and with the reactivation of pre-existing basement structures under increased pore pressure. The combination of statistical b-value anomaly, depth-consistent hypocenters, and compatible focal mechanisms substantially strengthens the case beyond proximity and timing alone. Hydraulic pressure diffusion modeling connecting the injection history to the observed seismicity migration has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "RATON-T4-Q1",
+    "case_id": "RATON",
+    "case_name": "Raton Basin, Colorado, 2001\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A sedimentary basin with historically low seismicity has experienced a multi-year earthquake swarm associated with active wastewater disposal from coal-bed methane production. The cluster sits within several kilometers of disposal wells; onset coincides with injection ramp-up; b-value analysis shows an elevated value relative to the regional tectonic background; relocated hypocenters cluster at depths consistent with the disposal interval and underlying basement; and focal mechanisms indicate strike-slip reactivation of pre-existing faults compatible with the regional stress field. Additionally, hydraulic diffusivity modeling using the injection history at the principal disposal wells has been performed. The modeled pressure front, computed using diffusivity values consistent with the local geology, accounts for the spatial migration of the seismicity cluster over time and the timing of the largest events relative to injection rate escalations. The convergence of five independent evidence criteria \u2014 spatial coincidence, temporal correlation, statistical b-value anomaly, depth consistency, focal mechanism compatibility, and pressure diffusion modeling \u2014 provides a self-consistent and mechanistically grounded case for attribution to wastewater disposal operations in the basin.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GRONING-T2-Q1",
+    "case_id": "GRONING",
+    "case_name": "Groningen, Netherlands",
+    "operation_type": "reservoir_impoundment",
+    "region": "Netherlands",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "An earthquake cluster has developed over several decades within the footprint of one of Europe's largest gas production fields, in a region with very low prior seismicity. The spatial coincidence of seismicity with the field boundary, and the temporal correlation of onset with production history, provide initial evidence of a possible link to operations. Extending this baseline evidence, detailed analysis of the seismicity rate over the production history reveals a systematic positive correlation: as cumulative production volumes increased over decades, the seismicity rate increased correspondingly. Periods in which production rates were reduced show a corresponding stabilization or reduction in seismicity rate. This production-rate-correlated seismicity rate change constitutes a dynamic, not merely static, temporal correlation, providing stronger evidence than onset coincidence alone. The mechanism differs from fluid-injection cases: seismicity in this setting is associated with reservoir compaction and pore pressure depletion rather than fluid injection, which affects how evidence criteria map to standard induced seismicity frameworks. Focal mechanism analysis and depth comparison to the reservoir interval have not been systematically applied in this evidence state. A geomechanical model connecting production to fault stress has not yet been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": "Groningen involves compaction-induced seismicity from gas extraction, not fluid injection. seismicity_rate_change here refers to production-rate-correlated seismicity escalation."
+  },
+  {
+    "item_id": "GRONING-T3-Q1",
+    "case_id": "GRONING",
+    "case_name": "Groningen, Netherlands",
+    "operation_type": "reservoir_impoundment",
+    "region": "Netherlands",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "An earthquake cluster has developed over decades within the footprint of a major gas production field in a region with low prior seismicity. The seismicity rate shows a systematic positive correlation with cumulative production volumes across multiple decades. Seismic network data reveal that the earthquake hypocenters occur predominantly at the depth of the producing reservoir, approximately 3 kilometers below the surface, consistent with stress concentration at the reservoir boundaries during compaction. The shallow depth of the events, relative to typical tectonic earthquakes in the region, is consistent with a reservoir-level mechanism. Focal mechanism solutions derived for the larger events in the sequence indicate predominantly normal faulting geometry, consistent with the vertical stress increase and horizontal stress reduction expected from reservoir compaction in a layer-cake sedimentary setting. The focal mechanisms are compatible with slip on reservoir-bounding faults under the stress changes induced by long-term depletion. The mechanism \u2014 compaction-induced rather than injection-induced \u2014 affects how evidence criteria map to standard frameworks, but the depth and focal mechanism evidence is analogous in function. A quantitative geomechanical model connecting production history to fault stress accumulation has not been finalized.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": "Groningen involves compaction-induced seismicity. pressure_diffusion_not_modeled here refers to the absence of a finalized geomechanical compaction-to-stress model."
+  },
+  {
+    "item_id": "GRONING-T4-Q1",
+    "case_id": "GRONING",
+    "case_name": "Groningen, Netherlands",
+    "operation_type": "reservoir_impoundment",
+    "region": "Netherlands",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "An earthquake cluster spans the footprint of a major gas production field, with seismicity rate correlating with production volumes, hypocenters at reservoir depth, and normal-faulting focal mechanisms consistent with compaction-induced stress changes. A quantitative geomechanical model has been developed connecting the cumulative gas extraction and reservoir pressure depletion to compaction of the reservoir layer and consequent stress concentration on reservoir-bounding faults. The model uses reservoir pressure history derived from production data, rock compressibility estimates from core measurements, and elastic theory to compute the incremental stress on known fault structures as a function of production history. Modeled stress changes on optimally oriented faults are sufficient to cause fault reactivation given plausible friction coefficients, and the spatial pattern of predicted high-stress zones corresponds to areas of elevated observed seismicity within the field. The temporal evolution of compaction-predicted stress accumulation is broadly consistent with the observed ramp-up in seismicity rate over decades of production. This compaction geomechanical model plays the same mechanistic role as a pressure diffusion model in injection-induced cases: it provides a physical link between the industrial operation and the observed seismicity. Uncertainty remains regarding the precise geometry of active fault segments and the generalizability of the compressibility parameters across the field.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown",
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": "pressure_diffusion_model here refers to a compaction geomechanical model \u2014 the physical mechanism differs from injection cases but is functionally equivalent as a mechanistic evidence criterion."
+  },
+  {
+    "item_id": "PAWNEE-T1-Q1",
+    "case_id": "PAWNEE",
+    "case_name": "Pawnee, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A large-magnitude earthquake exceeding magnitude 5.5 occurred on a strike-slip fault system in a region that had experienced increased seismic activity in the years preceding the event, broadly correlated with expansion of wastewater disposal operations in the area. Multiple active disposal wells operate within approximately 5 kilometers of the mainshock hypocenter, injecting produced water into a deep porous carbonate formation that directly overlies crystalline basement. The onset and escalation of anomalous seismicity in the surrounding area broadly coincides with the regional ramp-up of disposal volumes associated with oil and gas production. The mainshock caused structural damage to buildings in the surrounding region and was felt across a broad area. No focal mechanism analysis has been performed to characterize the fault geometry of the events in this sequence. The hypocentral depths of the earthquakes have not been systematically compared to the depth of the disposal formation or the basement contact. No hydraulic pressure diffusion model connecting the injection history to the spatial or temporal distribution of seismicity has been constructed. The possibility that a pre-existing, critically stressed fault was activated by natural stress fluctuations has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PAWNEE-T2-Q1",
+    "case_id": "PAWNEE",
+    "case_name": "Pawnee, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift"
+    ],
+    "evidence_description": "A large-magnitude earthquake exceeding magnitude 5.5 occurred on a strike-slip fault system near multiple active wastewater disposal wells injecting into a deep carbonate formation overlying crystalline basement. The seismicity escalation in the surrounding area broadly coincides with regional injection ramp-up. Statistical analysis of the magnitude-frequency distribution of the pre-mainshock seismicity cluster in the affected area reveals an elevated b-value relative to regional tectonic background estimates. This departure from the expected tectonic b-value is consistent with a fluid-modulated seismicity population in which increased pore pressure has modified the effective stress on fault populations, reducing the differential stress required for rupture and shifting the magnitude distribution toward more frequent smaller events relative to larger ones. The b-value anomaly provides a statistical fingerprint supporting an induced origin beyond what proximity and timing alone can establish. No focal mechanism analysis has been conducted to characterize the fault geometry of the sequence. Hypocentral depths have not been compared to the disposal formation depth. No pressure diffusion modeling has been performed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PAWNEE-T3-Q1",
+    "case_id": "PAWNEE",
+    "case_name": "Pawnee, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A large-magnitude earthquake on a strike-slip fault occurred near multiple wastewater disposal wells; seismicity escalation correlates with regional injection ramp-up; and b-value analysis shows a statistical anomaly consistent with fluid-induced seismicity. Relocated hypocenters for the pre-mainshock seismicity cluster place events at depths consistent with the contact between the deep carbonate disposal formation and the underlying crystalline basement, the zone where injected fluids accumulate and where pore pressure perturbation would be greatest. The mainshock hypocenter is also consistent with this depth range. Focal mechanism solutions derived for the mainshock and for larger pre-mainshock events indicate strike-slip faulting geometry. The inferred fault planes are consistent with the orientation of a mapped regional fault system in the area and with the regional tectonic stress field, supporting the interpretation that pore pressure increase from nearby disposal reactivated an optimally oriented pre-existing fault. Pressure diffusion modeling connecting the specific injection history at individual wells to the timing and location of the mainshock has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PAWNEE-T4-Q1",
+    "case_id": "PAWNEE",
+    "case_name": "Pawnee, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A large-magnitude strike-slip earthquake occurred near multiple wastewater disposal wells; seismicity correlates with regional injection ramp-up; b-value analysis supports fluid-induced origin; hypocenters cluster at the disposal formation/basement contact; and focal mechanisms indicate strike-slip reactivation of an optimally oriented fault in the regional stress field. Additionally, hydraulic diffusivity modeling using injection histories from the nearest disposal wells has been performed. The modeled pore pressure diffusion front, using diffusivity values consistent with the transmissive properties of the deep carbonate formation and the basement contact zone, reaches the mainshock hypocenter location within a timeframe consistent with the cumulative injection history preceding the event. The modeled pressure perturbation at the fault location is sufficient to overcome the fault's frictional resistance given estimates of the regional background stress state. The convergence of spatial, temporal, statistical, depth, focal mechanism, and pressure diffusion evidence provides a self-consistent physical case for attribution of this large-magnitude event to regional wastewater disposal operations.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GUYGRB-T1-Q1",
+    "case_id": "GUYGRB",
+    "case_name": "Guy-Greenbrier, Arkansas, 2010\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Arkansas, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A prolonged swarm of several hundred earthquakes, with the largest exceeding magnitude 4.5, developed in a region with limited prior seismic history. The swarm occurred near two active wastewater disposal wells associated with natural gas extraction from coal-bearing formations in the area. The seismicity cluster is spatially centered within a few kilometers of the nearest disposal wells. The onset of swarm activity broadly coincides with the ramp-up of disposal operations as gas production in the area expanded. The seismicity persisted for several months, with events distributed along a linear trend suggestive of a fault structure. Events in the sequence were felt by local residents. No focal mechanism analysis has been conducted to determine the fault geometry of the events. The hypocentral depths of the earthquakes have not been compared to the depth of the disposal interval to assess whether seismicity is occurring where injected fluids could plausibly reach. No hydraulic pressure diffusion model has been constructed. A natural origin \u2014 spontaneous activation of a pre-existing fault structure coincident with disposal operations \u2014 has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GUYGRB-T2-Q1",
+    "case_id": "GUYGRB",
+    "case_name": "Guy-Greenbrier, Arkansas, 2010\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Arkansas, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A prolonged swarm of several hundred earthquakes near two active wastewater disposal wells from gas production operations. Onset broadly coincides with disposal ramp-up. A particularly informative operational pattern provides dynamic evidence of a causal link: when the two nearest disposal wells were temporarily suspended by regulators during the swarm, the seismicity rate decreased substantially. When operations at nearby wells resumed, seismicity escalated again. This injection-correlated seismicity rate change \u2014 a rate decrease during a planned operational pause and a rate increase upon resumption \u2014 provides evidence more specific than a simple onset coincidence and is difficult to explain by a purely natural seismicity source. The dynamic correlation between operational status and seismicity rate substantially increases confidence in a causal link. Focal mechanism analysis has not been completed for events in the sequence. Hypocentral depths have not been compared to the disposal interval. No pressure diffusion modeling has been performed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GUYGRB-T3-Q1",
+    "case_id": "GUYGRB",
+    "case_name": "Guy-Greenbrier, Arkansas, 2010\u20132011",
+    "operation_type": "wastewater_disposal",
+    "region": "Arkansas, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A prolonged earthquake swarm near two wastewater disposal wells from gas production, with an injection-correlated rate change observed when operations were temporarily suspended. Relocated hypocenters for the swarm cluster at depths consistent with the lowermost sedimentary formations and underlying crystalline basement, the zone where produced-water disposal targets deep saline formations. This depth range is consistent with pore pressure perturbation from the injection interval reaching fault structures at the base of the sedimentary sequence. Focal mechanism solutions for the larger events in the swarm indicate predominantly strike-slip faulting geometry on fault planes consistent with the orientation of mapped regional fault structures and with the local tectonic stress field. The combination of injection-pause-correlated seismicity rate changes, depth-consistent hypocenters, and compatible focal mechanisms provides a moderately supported case for induced seismicity. Pressure diffusion modeling connecting the specific injection volumes and timing to the observed seismicity distribution has not been performed, and a coincident natural stress perturbation triggering the same fault at the time of disposal operations has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "YTOWN-T1-Q1",
+    "case_id": "YTOWN",
+    "case_name": "Youngstown, Ohio, 2011\u20132012",
+    "operation_type": "wastewater_disposal",
+    "region": "Ohio, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A cluster of earthquakes, with the largest exceeding magnitude 3.5, developed in a small area that had no documented seismic history during decades of regional seismic monitoring. The seismicity cluster is centered within approximately one kilometer of a single deep wastewater disposal well targeting a formation at the base of the sedimentary sequence. The well commenced operations in the months preceding the onset of seismicity. No earthquakes had been recorded in the immediate vicinity of the well during the regional monitoring period prior to operations. The onset and escalation of seismicity broadly coincide with the start and continuation of injection. The largest event in the sequence occurred after more than a year of continuous operations. No focal mechanism analysis has been conducted. The hypocentral depths have not been compared to the injection interval. No pressure diffusion modeling has been performed. The possibility of a natural fault activation coincidentally beginning at the time operations commenced has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "YTOWN-T2-Q1",
+    "case_id": "YTOWN",
+    "case_name": "Youngstown, Ohio, 2011\u20132012",
+    "operation_type": "wastewater_disposal",
+    "region": "Ohio, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A cluster of earthquakes near a single deep disposal well in a historically seismically inactive area, with onset coinciding with the start of operations. A particularly diagnostic operational signature strengthens the temporal evidence: during a brief voluntary pause in injection operations, the local seismicity rate decreased noticeably. When injection resumed, seismicity escalated, culminating in the largest event of the sequence. This injection-pause-correlated seismicity rate change \u2014 decrease during pause, increase upon resumption \u2014 provides a dynamic, near-experimental correlation between well operations and seismicity that is very difficult to attribute to a coincident natural source. The absence of any prior seismicity during the monitoring period further reduces the plausibility of a natural explanation emerging precisely when operations commenced. Focal mechanism analysis has not been conducted. Hypocentral depths have not been compared to the disposal interval. No pressure diffusion modeling has been performed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "YTOWN-T3-Q1",
+    "case_id": "YTOWN",
+    "case_name": "Youngstown, Ohio, 2011\u20132012",
+    "operation_type": "wastewater_disposal",
+    "region": "Ohio, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A cluster of earthquakes near a single deep disposal well in a historically inactive area, with an injection-pause-correlated seismicity rate change providing strong temporal evidence of a causal link. Relocated hypocenters for the earthquake cluster place events at depths near the contact between the deepest sedimentary formation and the underlying crystalline basement \u2014 the zone where the disposal well terminates and where injected fluids would exert maximum pore pressure on basement fault structures. Focal mechanism solutions for the larger events indicate normal to strike-slip faulting geometry consistent with the regional stress field in this intraplate setting and with reactivation of pre-existing basement faults under pore pressure increase. The combination of a near-experimental injection-correlated rate change, depth-consistent hypocenters, and compatible focal mechanisms in a historically aseismic area provides a moderately supported case. Pressure diffusion modeling connecting the specific injection volumes and well depths to the hypocenter locations and event timing has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "YTOWN-T4-Q1",
+    "case_id": "YTOWN",
+    "case_name": "Youngstown, Ohio, 2011\u20132012",
+    "operation_type": "wastewater_disposal",
+    "region": "Ohio, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A single deep disposal well in a historically aseismic area produced an earthquake cluster with an injection-pause-correlated seismicity rate change, hypocenters at basement contact depth, and normal-to-strike-slip focal mechanisms consistent with the regional stress field. Hydraulic diffusivity modeling using the injection history at the single well has been performed. Because only one well is involved, the pressure diffusion calculation is particularly tractable: using diffusivity values consistent with the deep formation properties and basement permeability estimates, the modeled pressure front reaches the hypocenter zone at a time consistent with the observed onset of seismicity. The modeled pressure perturbation at fault depth is sufficient to trigger slip on optimally oriented faults given the regional background stress state. The convergence of all six evidence criteria \u2014 including the near-experimental injection-pause correlation and the mechanistic pressure model linking a single well's injection history to the seismicity \u2014 provides a strong and internally consistent case for attribution to the disposal operations.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "BASEL-T1-Q1",
+    "case_id": "BASEL",
+    "case_name": "Basel, Switzerland, 2006",
+    "operation_type": "geothermal",
+    "region": "Switzerland",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A felt earthquake of sufficient magnitude to cause public concern and trigger a regulatory response occurred in a metropolitan area where a geothermal stimulation project had been conducting high-pressure fluid injection into crystalline basement rock at several kilometers depth. The earthquake occurred in close spatial proximity to the injection well. The region, located in a historically low-seismicity setting relative to its regional geological context, had recorded only minor microseismicity in the years preceding the geothermal project. No earthquakes large enough to be widely felt had been recorded in the immediate area during the prior monitoring period. The onset of felt seismicity temporally coincides with the injection program. No focal mechanism analysis is available for this item. The hypocenter depth has not been compared to the injection interval. No pressure diffusion model connecting injection volumes to seismicity timing has been constructed. A natural stress perturbation coincidentally activating a basement fault at the time of injection has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "BASEL-T2-Q1",
+    "case_id": "BASEL",
+    "case_name": "Basel, Switzerland, 2006",
+    "operation_type": "geothermal",
+    "region": "Switzerland",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A felt earthquake in a historically low-seismicity metropolitan area, in close proximity to a geothermal stimulation well conducting high-pressure fluid injection. The seismicity rate pattern provides important additional evidence: a marked onset of microseismic activity began during the injection program, substantially exceeding the pre-project background rate. Critically, after injection was halted in response to the felt events, a larger event still occurred several days after cessation of operations \u2014 consistent with a residual pore pressure that had already migrated to a fault and continued to exert influence after injection stopped. This post-injection event is characteristic of pressure diffusion in fractured rock and would not be expected from a natural stress trigger that coincidentally began with injection. The dynamic seismicity rate pattern \u2014 onset during injection, persistence after halt \u2014 provides evidence more specific than a simple spatial and temporal coincidence. Focal mechanism analysis has not been conducted. Depth comparison to injection interval has not been performed. Formal pressure diffusion modeling has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "BASEL-T3-Q1",
+    "case_id": "BASEL",
+    "case_name": "Basel, Switzerland, 2006",
+    "operation_type": "geothermal",
+    "region": "Switzerland",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A felt earthquake near a geothermal stimulation well in a historically low-seismicity area, with a seismicity rate pattern including post-injection persistence consistent with residual pore pressure. Relocated hypocenters for the microseismic cloud induced during the injection program cluster within the depth range of the injection interval in crystalline basement, consistent with hydraulic stimulation activating fractures and pre-existing faults at reservoir depth. The felt mainshock hypocenter is also consistent with this depth range. Focal mechanism solutions derived for the larger felt events indicate normal faulting geometry, consistent with the regional extensional stress regime associated with the tectonic setting and with the stress changes expected from pore pressure increase in a normal-faulting stress environment. The combination of the post-injection persistence of seismicity, depth-consistent hypocenters at reservoir level, and normal-faulting focal mechanisms compatible with the regional stress field provides a moderately supported case. A quantitative pressure diffusion model connecting injection volumes to the timing and location of the mainshock has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "BASEL-T4-Q1",
+    "case_id": "BASEL",
+    "case_name": "Basel, Switzerland, 2006",
+    "operation_type": "geothermal",
+    "region": "Switzerland",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A felt earthquake near a geothermal stimulation well in a historically low-seismicity area; seismicity rate onset and post-injection persistence consistent with residual pore pressure; hypocenters at injection/basement depth; and normal-faulting focal mechanisms compatible with the regional stress field. Hydraulic diffusivity modeling using the injection history and the hydraulic properties of the stimulated fractured basement rock has been performed. The modeled pore pressure front, using diffusivity values consistent with those estimated from the microseismic cloud geometry and the observed migration velocity of the seismicity front, accounts for both the spatial extent of the microseismic cloud during injection and the timing of the post-injection main felt event. The residual pressure remaining after injection cessation is sufficient, in the model, to reach and reactivate the fault that produced the largest event. The ability of the pressure diffusion model to explain not only the injection-phase seismicity but also the post-injection event timing is a particularly strong test of the mechanistic model and substantially strengthens the attribution.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PREESE-T1-Q1",
+    "case_id": "PREESE",
+    "case_name": "Preese Hall, Lancashire, UK, 2011",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "During hydraulic fracturing operations on a shale exploration well, a series of felt seismic events occurred, with the largest exceeding magnitude 2. The events were of sufficient size to be felt by local residents and to prompt a regulatory review. The seismicity is located in close spatial proximity to the hydraulic fracturing well \u2014 within the immediate vicinity of the wellpad. The felt events occurred during and immediately after active fracturing stages. The region had a limited prior history of naturally occurring seismicity at these shallow focal depths. No focal mechanism analysis has been conducted for the events in this sequence. The hypocentral depths have not been compared to the depth of the hydraulically fractured interval. No pressure diffusion or hydraulic communication model has been constructed to connect the fracturing operations to the observed seismicity. The possibility that a natural fault was coincidentally near failure at the time of operations has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PREESE-T2-Q1",
+    "case_id": "PREESE",
+    "case_name": "Preese Hall, Lancashire, UK, 2011",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "During hydraulic fracturing operations on a shale exploration well, felt seismic events occurred in close proximity to the wellpad. Detailed operational monitoring provides a specific seismicity rate correlation: events occurred during active fracturing stages and ceased when pumping was halted. This stage-by-stage correlation \u2014 seismicity during injection, absence during shut-in \u2014 provides a dynamic operational signature more specific than a simple onset coincidence. The events are consistent with hydraulic communication between the wellbore and a pre-existing fault structure in the vicinity that was reactivated during high-pressure injection. The regulatory response included a halt to operations following the largest felt events. Focal mechanism analysis has not been conducted. Hypocentral depths have not been formally compared to the fracturing interval. No pressure propagation model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PREESE-T3-Q1",
+    "case_id": "PREESE",
+    "case_name": "Preese Hall, Lancashire, UK, 2011",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "During hydraulic fracturing of a shale exploration well, felt seismic events occurred with a stage-correlated seismicity rate pattern indicating hydraulic communication with a pre-existing fault. Relocated hypocenters for the events place them at depths consistent with the hydraulically fractured interval, and on a fault structure adjacent to but not intersecting the wellbore. The depth consistency supports the interpretation that high-pressure fluid communication to an adjacent fault structure reactivated it. Focal mechanism solutions indicate strike-slip faulting geometry on fault planes consistent with the orientation of mapped fault structures in the area and with the regional tectonic stress field. The combination of stage-correlated seismicity, depth-consistent hypocenters on an adjacent fault, and compatible focal mechanisms provides a moderately supported case for hydraulic fracturing-induced seismicity. Coulomb stress analysis further supports the conclusion that the injection-induced stress changes were sufficient to bring the fault to failure. Pressure diffusion modeling has not been completed for this case.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PARADOX-T1-Q1",
+    "case_id": "PARADOX",
+    "case_name": "Paradox Valley, Colorado",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A long-running deep fluid injection program, operated for environmental management purposes at a single well in a remote canyon setting, has been associated with an earthquake sequence spanning multiple decades. The injection well targets a deep saline formation at several kilometers depth. The seismicity cluster is centered within a few kilometers of the injection well. The region had a low to moderate background seismicity rate prior to the commencement of injection, with the injection-period seismicity substantially elevated relative to that background. The sequence includes multiple events exceeding magnitude 3, with at least one event surpassing magnitude 4. The onset and continuation of seismicity broadly coincides with the long operational history of the injection program. No focal mechanism analysis is included in this evidence state. Depths have not been compared to the injection interval. No pressure diffusion model has been constructed. Natural seismicity in this geologically complex canyon region has not been formally ruled out as a contributor.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PARADOX-T2-Q1",
+    "case_id": "PARADOX",
+    "case_name": "Paradox Valley, Colorado",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A decades-long single-well injection program in a remote canyon setting has been associated with an extended earthquake sequence including events exceeding magnitude 4. The long injection record enables a robust seismicity rate analysis: over multiple decades, the seismicity rate shows a positive correlation with injection volumes, with periods of higher injection corresponding to periods of elevated seismicity rate. The extended time series allows the dynamic correlation to be observed across multiple operational phases, substantially strengthening the temporal evidence beyond what is achievable from a short-duration study. Injection pauses or rate reductions are associated with corresponding seismicity rate decreases. This multi-decade, injection-rate-correlated seismicity pattern is extremely unlikely to arise from a natural seismicity source that happens to track operational decisions over decades. Focal mechanism analysis has not been conducted. Depth comparison to injection interval has not been performed. Pressure diffusion modeling has not yet been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PARADOX-T3-Q1",
+    "case_id": "PARADOX",
+    "case_name": "Paradox Valley, Colorado",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A decades-long single-well injection program associated with an earthquake sequence showing multi-decade injection-rate-correlated seismicity. Relocated hypocenters cluster at depths consistent with the injection interval and the underlying fractured basement rock, where pore pressure perturbation from the deep disposal well would be maximal. The depth distribution is consistent with downward migration of pore pressure from the injection formation into permeable basement fault zones. Focal mechanism solutions for the larger events in the sequence have been derived, indicating strike-slip to normal faulting geometry consistent with the regional stress field in this geologically complex extensional setting. The fault planes of the focal mechanisms are consistent with mapped fault structures in the canyon geology. The convergence of multi-decade injection-correlated seismicity rate, depth-consistent hypocenters, and compatible focal mechanisms provides a moderately supported case. The long injection record and single-well setup make pressure diffusion modeling particularly tractable; such modeling has not yet been completed for this evidence state.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PARADOX-T4-Q1",
+    "case_id": "PARADOX",
+    "case_name": "Paradox Valley, Colorado",
+    "operation_type": "wastewater_disposal",
+    "region": "Colorado, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A single deep injection well with a multi-decade operational record shows injection-rate-correlated seismicity, hypocenters at injection/basement depth, and focal mechanisms consistent with the regional stress field. The single-well, long-duration setup makes pressure diffusion modeling uniquely tractable. Hydraulic diffusivity modeling using the full injection history has been performed, exploiting the decades-long time series to constrain diffusivity values and validate the model against multiple seismicity episodes. The modeled pressure front, computed using best-fit diffusivity values consistent with the deep formation and basement hydraulic properties, accounts for both the spatial migration of the seismicity cluster away from the well over time and the timing of the largest events relative to injection history. The modeled pressure perturbation at fault depth is sufficient to trigger slip given the regional stress state. The long record and single-source geometry make this one of the most well-constrained pressure diffusion analyses in the induced seismicity literature, providing particularly strong mechanistic support for the attribution.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GEYSERS-T1-Q1",
+    "case_id": "GEYSERS",
+    "case_name": "The Geysers, California",
+    "operation_type": "geothermal",
+    "region": "California, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "One of the world's largest geothermal facilities has operated for several decades, extracting steam from a fractured reservoir at several kilometers depth and, more recently, injecting large volumes of treated surface water to replenish the reservoir. The facility has been associated with elevated seismicity relative to the surrounding region, with events of magnitude exceeding 4 occurring within the operational footprint. The seismicity is spatially coincident with the footprint of the geothermal field, concentrated within the operational boundary rather than in the surrounding geological structures. Temporal correlation over the operational history is noted: seismicity rates within the field are elevated compared to pre-operational background. No focal mechanism analysis is included in this evidence state. Depths of the events have not been compared to the geothermal reservoir interval. No model connecting fluid injection or steam extraction to the observed seismicity distribution has been constructed. Natural seismicity in this tectonically active region has not been formally ruled out.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GEYSERS-T2-Q1",
+    "case_id": "GEYSERS",
+    "case_name": "The Geysers, California",
+    "operation_type": "geothermal",
+    "region": "California, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A major geothermal facility associated with spatially coincident elevated seismicity relative to regional background. Analysis of seismicity rate vs injection volumes reveals a seasonal pattern: seismicity rates within the field are higher during periods of elevated injection and lower during periods of reduced injection. This seasonal injection-rate-correlated seismicity pattern, repeating over multiple annual cycles, provides dynamic evidence linking fluid injection to seismicity beyond the simple spatial and temporal coincidence of the facility and the elevated seismicity rate. Periods of planned injection reduction correspond to measurable reductions in local seismicity rate. The repeating nature of the correlation across multiple cycles substantially strengthens the temporal evidence. Focal mechanism analysis has not been conducted for this evidence state. Depth comparison to the geothermal reservoir has not been performed. No fluid or thermal model connecting injection to seismicity has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GEYSERS-T3-Q1",
+    "case_id": "GEYSERS",
+    "case_name": "The Geysers, California",
+    "operation_type": "geothermal",
+    "region": "California, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A major geothermal facility with injection-rate-correlated seismicity. Seismic network data show that events concentrate within the depth range of the geothermal reservoir, with a spatial distribution that mirrors the operational footprint of the injection program within the field. Deeper events correspond to areas of more intensive injection. Focal mechanism solutions for the larger events in the sequence indicate predominantly strike-slip to normal faulting geometry consistent with the regional tectonic stress field. The focal mechanisms are compatible with thermal and pore pressure-induced stress changes expected from large-scale fluid injection into a fractured geothermal reservoir. The convergence of seasonal injection-correlated seismicity rate, reservoir-depth-consistent hypocenters, and stress-compatible focal mechanisms provides a moderately supported case. A quantitative fluid or thermal diffusion model connecting injection volumes and temperatures to the seismicity spatial and temporal distribution has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "GEYSERS-T4-Q1",
+    "case_id": "GEYSERS",
+    "case_name": "The Geysers, California",
+    "operation_type": "geothermal",
+    "region": "California, United States",
+    "tier": 4,
+    "tier_label": "Strong case",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism",
+      "pressure_diffusion_model"
+    ],
+    "evidence_description": "A major geothermal facility with seasonal injection-rate-correlated seismicity, reservoir-depth-consistent hypocenters, and focal mechanisms consistent with the regional stress field. Thermal and fluid diffusion modeling connecting injection volumes, temperatures, and hydraulic properties of the fractured reservoir to the observed seismicity distribution has been performed. The models account for both fluid pressure and thermal stress effects, which are significant in high-temperature geothermal systems. The modeled fluid and thermal fronts from injected surface water propagating into the hot reservoir are consistent with the observed spatial migration of seismicity away from injection wells over time, and with the temporal escalation of seismicity following increases in injection volumes in specific zones of the field. The modeling has been validated against the repeating seasonal pattern of seismicity rate changes. The convergence of a multi-decade observational record, robust injection-rate correlation, depth and focal mechanism consistency, and a quantitative diffusion model provides a strong case for attributing the elevated seismicity to the geothermal injection operations.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 4,
+    "reference_confidence_label": "Strong case",
+    "required_caveats": [
+      "generalizability_limited"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "KOYNA-T1-Q1",
+    "case_id": "KOYNA",
+    "case_name": "Koyna, India",
+    "operation_type": "reservoir_impoundment",
+    "region": "India",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A large reservoir impounded behind a major dam in a region that had no documented history of significant seismicity prior to impoundment has been associated with a long-running earthquake sequence that began several years after initial filling. The largest event in the sequence exceeded magnitude 6, caused widespread damage to local communities, and resulted in casualties. The seismicity cluster is spatially coincident with the reservoir area and its immediate surroundings, with events concentrated near the reservoir margin rather than in the wider regional geological setting. The region had essentially no recorded seismicity prior to impoundment despite decades of regional monitoring. The onset of seismicity temporally follows the initial filling of the reservoir, and the sequence has continued for decades in correlation with the reservoir's operational history. No focal mechanism analysis has been conducted for this evidence state. Hypocentral depths have not been compared to the reservoir base or the underlying geological structure. No stress or pressure model connecting water loading to the seismicity has been constructed. A natural seismicity source has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "KOYNA-T2-Q1",
+    "case_id": "KOYNA",
+    "case_name": "Koyna, India",
+    "operation_type": "reservoir_impoundment",
+    "region": "India",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A long-running reservoir-induced seismicity sequence in a previously aseismic region. Seismicity rate analysis over multiple decades of reservoir operation reveals a systematic correlation with reservoir water level: seismicity rates increase during periods of rapid reservoir filling and during high-stand water levels, and decrease during low-stand periods and reservoir drawdown. This seasonal water-level-correlated seismicity rate pattern repeats across multiple annual cycles and has been observed over many decades of monitoring. The dynamic correlation between reservoir water level fluctuations and seismicity rate provides evidence much more specific than the initial temporal coincidence of impoundment onset and seismicity onset. The mechanism \u2014 water load-induced pore pressure increase and elastic stress transfer from the overlying water mass \u2014 differs from fluid injection but produces an analogous correlation pattern. Focal mechanism analysis has not been conducted for this evidence state. Depth comparison to geological structure has not been performed. No geomechanical model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "KOYNA-T3-Q1",
+    "case_id": "KOYNA",
+    "case_name": "Koyna, India",
+    "operation_type": "reservoir_impoundment",
+    "region": "India",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A long-running reservoir seismicity sequence in a previously aseismic region, with a decades-long seasonal correlation between reservoir water level and seismicity rate. Relocated hypocenters for the earthquake sequence cluster at shallow depths consistent with the base of the reservoir and the upper portion of the crystalline basement underlying the reservoir basin, where water-load-induced pore pressure increase and elastic stress transfer would be most concentrated. The depth distribution is consistent with reservoir-level mechanisms rather than deep tectonic seismicity. Focal mechanism solutions for the larger events, including the largest historical event, indicate predominantly strike-slip faulting geometry consistent with the regional tectonic stress regime and with the stress perturbations expected from the water load and pore pressure diffusion beneath the reservoir. The convergence of multi-decade water-level-correlated seismicity rate changes, depth-consistent hypocenters, and compatible focal mechanisms provides a moderately supported case for reservoir-induced seismicity. A quantitative geomechanical model connecting reservoir water level history to fault stress accumulation has not been finalized.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited",
+      "stress_state_not_characterized"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "FOXCRK-T1-Q1",
+    "case_id": "FOXCRK",
+    "case_name": "Fox Creek, Alberta, Canada",
+    "operation_type": "hydraulic_fracturing",
+    "region": "Alberta, Canada",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A cluster of felt earthquakes, with the largest exceeding magnitude 4, occurred in a region where horizontal hydraulic fracturing of deep shale formations was being conducted. The seismicity cluster is located within a few kilometers of active fracturing operations targeting tight hydrocarbon-bearing formations at several kilometers depth. Events in the sequence occurred during and shortly after active fracturing operations in the area. The region had limited prior history of naturally occurring seismicity at the relevant focal depths. The temporal association between active fracturing and felt seismicity led to operational concerns. No focal mechanism analysis has been conducted. Depths have not been compared to the target formation depth or the underlying basement. No hydraulic or stress model connecting fracturing operations to the seismicity has been constructed. The possibility of a natural fault activation that happened to coincide with operations has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "FOXCRK-T2-Q1",
+    "case_id": "FOXCRK",
+    "case_name": "Fox Creek, Alberta, Canada",
+    "operation_type": "hydraulic_fracturing",
+    "region": "Alberta, Canada",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A cluster of felt earthquakes near active hydraulic fracturing operations in a region with limited prior seismicity. Analysis of the seismicity rate relative to fracturing stage activity reveals a stage-by-stage correlation: seismicity events occur during active fracturing stages and the seismicity rate decreases between stages and when operations are suspended. Some events occur shortly after a stage, consistent with continued pressure equilibration after pumping. This stage-correlated seismicity rate pattern is more specific than a simple onset coincidence and is consistent with hydraulic communication between fracturing operations and a pre-existing basement fault. Fracturing at these depths penetrates or closely approaches crystalline basement, where pre-existing faults could be reactivated by fluid pressure or stress transfer. Focal mechanism analysis has not been conducted. Hypocentral depths have not been formally compared to the fracturing interval or basement depth. No hydraulic model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "FOXCRK-T3-Q1",
+    "case_id": "FOXCRK",
+    "case_name": "Fox Creek, Alberta, Canada",
+    "operation_type": "hydraulic_fracturing",
+    "region": "Alberta, Canada",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "Felt earthquakes near hydraulic fracturing operations show a stage-correlated seismicity rate pattern consistent with hydraulic communication to a pre-existing fault. Relocated hypocenters place events below the target hydrocarbon formation, in the crystalline basement, consistent with the interpretation that pore pressure or stress transfer from fracturing operations at the base of the sedimentary sequence penetrated into basement fault structures. The depth distribution is consistent with fluid communication or stress transfer reaching reactivatable faults below the direct target zone. Focal mechanism solutions for the larger events indicate reverse faulting geometry consistent with the regional compressive stress regime in this foreland basin setting, and compatible with reactivation of pre-existing thrust or reverse faults in the basement under conditions of elevated pore pressure or Coulomb stress increase. The combination of stage-correlated seismicity, basement-depth hypocenters, and reverse-faulting focal mechanisms consistent with the regional stress field provides a moderately supported case. A quantitative model connecting fracturing operations to basement fault stress has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CASTOR-T1-Q1",
+    "case_id": "CASTOR",
+    "case_name": "Castor, Spain, 2013",
+    "operation_type": "reservoir_impoundment",
+    "region": "Spain",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "An underground gas storage facility operating in a depleted offshore oil field was associated with a seismicity sequence that included hundreds of events and a largest event exceeding magnitude 4. The region had a moderate background seismicity rate prior to storage operations, complicating attribution. The seismicity cluster corresponds spatially with the footprint of the storage reservoir. The onset of the seismicity escalation temporally coincides with commencement of gas injection operations in the storage reservoir. The largest events in the sequence were felt onshore in coastal communities. Following the seismicity, injection operations were suspended by the operator. No focal mechanism analysis has been conducted. Hypocentral depths have not been compared to the storage reservoir depth. No pressure model connecting injection volumes to the seismicity has been constructed. A natural seismicity source in this geologically active region has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CASTOR-T2-Q1",
+    "case_id": "CASTOR",
+    "case_name": "Castor, Spain, 2013",
+    "operation_type": "reservoir_impoundment",
+    "region": "Spain",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A gas storage facility in a depleted field associated with a seismicity sequence whose largest events exceeded magnitude 4. Analysis of the seismicity rate provides a dynamic temporal signal: the seismicity onset and rate escalation coincide with active gas injection operations, and following operator suspension of operations in response to the seismicity, the seismicity rate declined. This operational-status-correlated seismicity rate change \u2014 escalation during active injection, decline after operations cease \u2014 provides evidence more specific than a simple onset coincidence. The mechanism involves injection of gas into a porous rock formation, which alters pore pressure and poroelastic stress on surrounding fault structures. The spatial coincidence of the seismicity with the storage field boundary and the operational correlation together provide a plausible link. Focal mechanism analysis has not been conducted. Depth comparison to reservoir has not been performed. No pressure diffusion model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CASTOR-T3-Q1",
+    "case_id": "CASTOR",
+    "case_name": "Castor, Spain, 2013",
+    "operation_type": "reservoir_impoundment",
+    "region": "Spain",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A gas storage facility associated with a seismicity sequence showing operational-status-correlated rate changes. Relocated hypocenters for the events in the sequence cluster at depths consistent with the storage reservoir and the surrounding geological structures, including faults bounding the reservoir. The depth distribution is consistent with pore pressure changes from gas injection propagating outward and activating faults adjacent to the storage field. Focal mechanism solutions indicate predominantly normal faulting geometry consistent with the regional extensional stress regime in this Mediterranean tectonic setting and with the stress perturbations expected from pressurization of a porous reservoir. The fault planes of the focal mechanisms are consistent with mapped faults known to bound the depleted field structure. The combination of operational-correlated rate change, reservoir-depth hypocenters, and stress-compatible focal mechanisms provides a moderately supported case for injection-induced seismicity in this storage context. A quantitative pressure diffusion model connecting injection volumes to fault reactivation has not been finalized.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "DFW-T1-Q1",
+    "case_id": "DFW",
+    "case_name": "Dallas-Fort Worth, Texas, 2008\u20132009",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A swarm of earthquakes, with the largest exceeding magnitude 3, occurred in a metropolitan area with no documented history of natural seismicity at these focal depths. The swarm began approximately two months after a single deep wastewater disposal well commenced operations in the area, injecting produced water into a deep saline formation. The seismicity cluster is centered within approximately one to two kilometers of the well. No significant earthquakes had been recorded in the immediate area during prior seismic monitoring. The two-month lag between injection commencement and seismicity onset is consistent with the timescale for pore pressure diffusion to reach a fault at distance from the well. The swarm escalated and then waned over approximately one year of monitoring. No focal mechanism analysis was conducted. The depths of the events were not compared to the injection formation. No pressure diffusion model was constructed. A natural fault activation that coincidentally began two months after well commencement has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "DFW-T2-Q1",
+    "case_id": "DFW",
+    "case_name": "Dallas-Fort Worth, Texas, 2008\u20132009",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A swarm of earthquakes in a historically aseismic metropolitan area began approximately two months after a single deep disposal well commenced operations. Analysis of the seismicity rate over the operational history reveals a positive correlation with injection volumes: periods of higher injection rates correspond to periods of more frequent earthquakes, and the overall seismicity rate tracks the injection history. The two-month onset lag and the subsequent injection-rate-correlated seismicity together provide evidence of a hydraulic link between the single disposal well and the earthquake swarm. The constraint of a single well simplifies the attribution analysis relative to cases with multiple potential sources. Focal mechanism analysis has not been conducted for the sequence. Depths of events have not been compared to the injection formation depth. No pressure diffusion model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "DFW-T3-Q1",
+    "case_id": "DFW",
+    "case_name": "Dallas-Fort Worth, Texas, 2008\u20132009",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A single deep disposal well in a historically aseismic metropolitan area associated with a swarm showing a two-month onset lag and injection-rate-correlated seismicity rate. Relocated hypocenters cluster at depths consistent with the disposal formation and underlying basement, where pore pressure perturbation from the single well would be concentrated. Focal mechanism solutions indicate strike-slip faulting geometry consistent with the regional tectonic stress field in this cratonic setting. The fault planes are compatible with pre-existing basement structures mapped in the area. The combination of a single-well source, two-month onset lag consistent with pressure diffusion timescales, injection-rate correlation, depth-consistent hypocenters, and strike-slip focal mechanisms in a previously aseismic area provides a moderately supported case for induced seismicity. The single-well geometry makes a pressure diffusion calculation particularly tractable; such modeling has not been completed for this evidence state.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "AZLE-T1-Q1",
+    "case_id": "AZLE",
+    "case_name": "Azle, Texas, 2013\u20132014",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A swarm of approximately 300 earthquakes, with the largest exceeding magnitude 3.5, occurred in a suburban area near multiple active wastewater disposal wells. The seismicity cluster developed over several months in an area with a low prior seismicity rate. The disposal wells inject produced water from nearby gas production operations into deep formations. The seismicity cluster is located within several kilometers of the nearest active disposal wells. The onset and escalation of seismicity broadly coincide with the period of active disposal in the area. Events were felt by local residents and prompted regulatory attention. The attribution is complicated by the presence of multiple disposal wells of varying injection volumes and histories. No focal mechanism analysis has been conducted. Depths have not been compared to the disposal formation. No pressure diffusion model has been constructed. Natural seismicity in this region has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed",
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "AZLE-T2-Q1",
+    "case_id": "AZLE",
+    "case_name": "Azle, Texas, 2013\u20132014",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A swarm of felt earthquakes near multiple wastewater disposal wells with onset coinciding with active disposal operations. Seismicity rate analysis shows a positive correlation between regional disposal volumes and the seismicity rate over the duration of the swarm. The escalation of seismicity tracks the increase in disposal activity in the area. While the multi-well setting complicates the attribution to any individual well, the aggregate disposal volume in the area correlates with the aggregate seismicity rate. Focal mechanism analysis has not been conducted. Depths have not been compared to the disposal formation. No pressure model has been constructed. The multi-well setting means that identifying the specific source well or wells responsible remains uncertain even if the aggregate attribution is accepted.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out",
+      "fault_geometry_unknown"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "AZLE-T3-Q1",
+    "case_id": "AZLE",
+    "case_name": "Azle, Texas, 2013\u20132014",
+    "operation_type": "wastewater_disposal",
+    "region": "Texas, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A swarm of felt earthquakes near multiple disposal wells with a disposal-volume-correlated seismicity rate. Relocated hypocenters cluster at depths consistent with the deep disposal formations and underlying basement, where pore pressure perturbation from the aggregate injection would be concentrated. Focal mechanism solutions for the larger events indicate strike-slip faulting consistent with the regional stress orientation. The fault planes are compatible with mapped fault structures in the area. The combination of disposal-correlated rate, depth-consistent hypocenters, and compatible focal mechanisms provides a moderately supported case. However, the multi-well, multi-source geometry makes attributing the seismicity to any specific well or wells difficult. Pressure diffusion modeling that accounts for multiple injection sources and their hydraulic interference has not been completed, and natural seismicity contributing to the swarm has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out",
+      "fault_geometry_unknown"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CUSHING-T1-Q1",
+    "case_id": "CUSHING",
+    "case_name": "Cushing, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "A significant earthquake exceeding magnitude 4.5 occurred near a major strategic petroleum storage hub in a region with active wastewater disposal operations. Multiple disposal wells injecting produced water into deep carbonate formations overlying crystalline basement operate within approximately 10 kilometers of the mainshock hypocenter. The seismicity in the area, including the mainshock, occurred during a period of widespread seismicity escalation across the region broadly correlated with increased wastewater disposal from oil and gas production. No focal mechanism analysis has been conducted for the specific events of concern. The depths of the events have not been compared to the disposal formation or basement contact. No hydraulic diffusion model has been constructed. Natural seismicity in this historically active tectonic region cannot be excluded without further evidence. The location near critical national infrastructure increases the importance of accurate attribution.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CUSHING-T2-Q1",
+    "case_id": "CUSHING",
+    "case_name": "Cushing, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift"
+    ],
+    "evidence_description": "A significant earthquake near critical petroleum infrastructure near multiple active disposal wells. Gutenberg-Richter analysis of the local seismicity cluster reveals an elevated b-value relative to the regional tectonic background, consistent with a seismicity population influenced by fluid-induced pore pressure reduction of effective normal stress. The b-value anomaly provides a statistical fingerprint beyond spatial and temporal coincidence, distinguishing the local cluster from what would be expected for purely tectonic seismicity at the regional background b-value. Focal mechanism analysis has not been conducted. Depth comparison to disposal interval has not been performed. No pressure diffusion modeling has been constructed. The broad regional context of disposal-correlated seismicity escalation provides circumstantial support but does not constitute formal attribution for this specific event cluster.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "CUSHING-T3-Q1",
+    "case_id": "CUSHING",
+    "case_name": "Cushing, Oklahoma, 2016",
+    "operation_type": "wastewater_disposal",
+    "region": "Oklahoma, United States",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "b_value_shift",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "A significant earthquake near critical petroleum infrastructure, with multiple active disposal wells nearby and an elevated b-value consistent with fluid-induced seismicity. Relocated hypocenters for the events cluster at depths consistent with the contact between the deep carbonate disposal formation and the crystalline basement, the zone where injection-induced pore pressure would be maximal. Focal mechanism solutions for the mainshock and nearby events indicate strike-slip faulting consistent with the regional tectonic stress field and with reactivation of pre-existing basement faults under pore pressure increase. The combination of elevated b-value, depth-consistent hypocenters, and compatible focal mechanisms in the context of active regional disposal operations provides a moderately supported case. Hydraulic pressure diffusion modeling connecting the injection histories of the nearest wells to the mainshock timing and location has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "POLNDTWP-T1-Q1",
+    "case_id": "POLNDTWP",
+    "case_name": "Poland Township, Ohio",
+    "operation_type": "hydraulic_fracturing",
+    "region": "Ohio, United States",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence"
+    ],
+    "evidence_description": "A cluster of felt seismic events, with the largest events sufficient to be detected and reported by local residents, occurred in a region with no prior history of naturally occurring seismicity. The events took place during hydraulic fracturing operations on a horizontal well targeting a deep shale formation. The seismicity is located in the immediate vicinity of the hydraulic fracturing operation. The region had no documented natural seismicity prior to the onset of operations. The events occurred during active fracturing stages, with the spatial and temporal proximity to operations providing a basic association. No focal mechanism analysis has been performed. Hypocentral depths have not been compared to the fracturing interval. No hydraulic model connecting fracturing to the seismicity has been constructed. The possibility of a natural fault activation coincidentally beginning during operations has not been formally evaluated.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "POLNDTWP-T2-Q1",
+    "case_id": "POLNDTWP",
+    "case_name": "Poland Township, Ohio",
+    "operation_type": "hydraulic_fracturing",
+    "region": "Ohio, United States",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "background_seismicity_absence",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "A cluster of felt events during hydraulic fracturing in a previously aseismic area. Detailed stage-level monitoring provides a specific operational correlation: events occurred during active pumping stages and ceased when pumping was halted, with a clear stage-by-stage seismicity rate pattern. This operational correlation \u2014 seismicity during fracturing, absence during shut-in \u2014 is consistent with hydraulic communication between the wellbore and a nearby pre-existing fault that was brought to failure by elevated pore pressure or stress transfer during injection. The stage-level correlation is more specific than a simple onset coincidence and is difficult to explain by a natural seismicity source that tracks operational decisions at the stage level. Focal mechanism analysis has not been performed. Depths have not been compared to the fracturing interval. No hydraulic model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "LANDAU-T1-Q1",
+    "case_id": "LANDAU",
+    "case_name": "Landau, Germany",
+    "operation_type": "geothermal",
+    "region": "Germany",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "An enhanced geothermal system project located in a metropolitan area, targeting crystalline basement rock for heat extraction through high-pressure fluid circulation. The region is situated within a tectonically active rift structure with moderate background seismicity. A felt earthquake occurred in spatial proximity to the injection well during the operational period of the project. The temporal coincidence of operational phases and the occurrence of felt seismicity prompted regulatory concern and operational modifications. The presence of moderate background seismicity in this rift setting complicates attribution relative to cases in historically aseismic regions. No focal mechanism analysis is included in this evidence state. The hypocenter depth has not been formally compared to the injection interval. No pressure diffusion model has been constructed. A natural seismicity event coinciding with operations in this tectonically active region has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": "Landau is in a tectonically active rift setting with moderate background seismicity; attribution is more complex than for historically aseismic settings."
+  },
+  {
+    "item_id": "LANDAU-T2-Q1",
+    "case_id": "LANDAU",
+    "case_name": "Landau, Germany",
+    "operation_type": "geothermal",
+    "region": "Germany",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "An EGS geothermal project in a rift setting with moderate background seismicity, associated with felt seismicity during operations. Seismicity rate analysis during the operational period reveals an above-background rate of felt events compared to the pre-operational monitoring period for the immediate area around the well. While the regional background seismicity complicates the analysis, the local rate near the well during operations exceeds what would be expected from the regional background rate alone. This above-background local rate during operations provides evidence of an induced contribution beyond simple proximity. Temporal patterns within the operational period show elevated rates during injection-active phases. Focal mechanism analysis has not been conducted for this evidence state. Depth comparison to injection interval has not been performed. No pressure diffusion model has been constructed. Formal quantitative separation of induced from background seismicity has not been performed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": "Background seismicity separation is an additional required analysis step for this case that is not captured in the standard caveat vocabulary."
+  },
+  {
+    "item_id": "LANDAU-T3-Q1",
+    "case_id": "LANDAU",
+    "case_name": "Landau, Germany",
+    "operation_type": "geothermal",
+    "region": "Germany",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "An EGS geothermal project in a rift setting showing above-background local seismicity rate during operations. Relocated hypocenters for the events associated with operational periods cluster at depths consistent with the injection interval in crystalline basement, distinguishing them from shallower sedimentary events in the regional background. Focal mechanisms for the operational-period events indicate normal faulting consistent with the regional extensional stress regime of the rift structure, and compatible with the reactivation of pre-existing normal faults under increased pore pressure from fluid injection. The depth consistency and focal mechanism compatibility, in the context of above-background seismicity rate during operations, provide a moderately supported case. The moderate regional background seismicity means that distinguishing induced from natural events requires more careful analysis than in aseismic settings. A pressure diffusion model connecting injection volumes and rates to the timing and location of felt events has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": "The moderate background seismicity in this rift setting requires more careful separation of induced vs natural seismicity than standard aseismic cases."
+  },
+  {
+    "item_id": "PRSNRD-T1-Q1",
+    "case_id": "PRSNRD",
+    "case_name": "Preston New Road, Lancashire, UK, 2018\u20132019",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 1,
+    "tier_label": "Weakly suggestive",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation"
+    ],
+    "evidence_description": "Hydraulic fracturing operations on a shale exploration well resulted in a series of felt seismic events over an approximately 18-month operational period, with the largest event exceeding magnitude 2.5 and felt by local residents across a broad area. The events occurred during and after active fracturing stages at the well. The seismicity is located in the immediate vicinity of the wellpad. The region had a limited prior history of naturally occurring seismicity at these shallow focal depths. The felt events triggered the regulatory traffic-light protocol, leading to repeated operational pauses and ultimately to the suspension of hydraulic fracturing at the site. No focal mechanism analysis has been conducted. Hypocentral depths have not been formally compared to the fracturing interval. No hydraulic model connecting fracturing to the seismicity has been constructed. A natural fault activation coincident with operations has not been formally excluded.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 1,
+    "reference_confidence_label": "Weakly suggestive",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "injection_volume_pressure_not_analyzed"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PRSNRD-T2-Q1",
+    "case_id": "PRSNRD",
+    "case_name": "Preston New Road, Lancashire, UK, 2018\u20132019",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 2,
+    "tier_label": "Plausible",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change"
+    ],
+    "evidence_description": "Hydraulic fracturing operations on a shale exploration well produced felt seismicity with events occurring during active fracturing stages. Detailed seismic monitoring showed a clear stage-by-stage operational correlation: seismicity rate increased during pumping and decreased or ceased during shut-in periods and operational pauses. The largest event occurred shortly after a fracturing stage and exceeded magnitude 2.5. This stage-correlated seismicity pattern, repeating across multiple fracturing stages over the operational period, provides dynamic evidence consistent with hydraulic communication to a pre-existing fault. The multiple-stage repetition of the correlation strengthens the inference beyond a single coincident event. Focal mechanism analysis has not been conducted. Depths have not been compared to the fracturing interval. No hydraulic model has been constructed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 2,
+    "reference_confidence_label": "Plausible",
+    "required_caveats": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "optional_caveats": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "annotation_notes": ""
+  },
+  {
+    "item_id": "PRSNRD-T3-Q1",
+    "case_id": "PRSNRD",
+    "case_name": "Preston New Road, Lancashire, UK, 2018\u20132019",
+    "operation_type": "hydraulic_fracturing",
+    "region": "United Kingdom",
+    "tier": 3,
+    "tier_label": "Moderately supported",
+    "evidence_components": [
+      "spatial_proximity",
+      "temporal_correlation",
+      "seismicity_rate_change",
+      "depth_correlation",
+      "focal_mechanism"
+    ],
+    "evidence_description": "Hydraulic fracturing on a shale exploration well produced stage-correlated felt seismicity over multiple fracturing stages. Relocated hypocenters place events at depths consistent with the hydraulically fractured interval and on a fault structure adjacent to the wellbore. Focal mechanism solutions indicate strike-slip faulting geometry on fault planes consistent with mapped regional fault structures and with the local tectonic stress field in this transpressional setting. The depth consistency and strike-slip focal mechanisms compatible with the regional stress field, combined with the stage-correlated seismicity rate pattern, provide a moderately supported case for hydraulic fracturing-induced seismicity. The case was influential in regulatory discussions that led to an extended moratorium on shale hydraulic fracturing in the jurisdiction. A quantitative pressure propagation model connecting specific fracturing stage volumes and pressures to fault activation has not been completed.",
+    "question": "Based on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+    "reference_confidence": 3,
+    "reference_confidence_label": "Moderately supported",
+    "required_caveats": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "optional_caveats": [
+      "generalizability_limited"
+    ],
+    "annotation_notes": ""
+  }
+]

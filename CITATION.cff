@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use InducedSeismic-Bench, please cite it as below."
+title: "InducedSeismic-Bench: A Benchmark for Calibrated Causal Attribution in AI-Assisted Induced Seismicity Analysis"
+authors:
+  - family-names: "Austin"
+    given-names: "George"
+  - family-names: "Mach"
+    given-names: "Richard"
+version: "0.1.0-draft"
+date-released: "2026-06-01"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/george203/InducedSeismic-Bench"
+keywords:
+  - induced seismicity
+  - benchmark
+  - AI calibration
+  - geoscience
+  - epistemic uncertainty
+  - human factors
+  - automation bias
+abstract: >
+  InducedSeismic-Bench is a benchmark that evaluates whether AI systems express
+  appropriately calibrated confidence when attributing earthquake sequences to human
+  industrial activity. Each item presents a real documented seismicity case with a
+  controlled subset of evidence criteria across four evidence tiers; the benchmark
+  measures whether AI confidence tracks evidentiary completeness (tier sensitivity)
+  rather than over-committing based on pattern matching. Three metrics are computed:
+  calibration gap, caveat coverage, and tier sensitivity (Spearman rho).

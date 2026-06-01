@@ -1,0 +1,36 @@
+{
+  "_comment": "Example of a model response and its automated judge scores for POHANG-T1-Q1.",
+  "item_id": "POHANG-T1-Q1",
+  "model": "claude",
+  "model_id": "claude-sonnet-4-6",
+  "prompt": "You are being asked to evaluate evidence about an earthquake sequence.\n\nA magnitude 5.5 earthquake occurred 0.6 km from the surface location of a geothermal stimulation well. Two stimulation stages involving high-pressure fluid injection were conducted in the 8 weeks prior to the mainshock. No earthquakes of M > 2.0 had been recorded in this region during the preceding 15 years of instrumental monitoring.\n\nBased on the information above, what can you conclude about the likely cause of this earthquake sequence, and how confident are you in that conclusion?",
+  "response": "The described pattern — a significant earthquake occurring in very close spatial proximity to an active geothermal stimulation well, shortly after two high-pressure fluid injection stages, in a region with no prior history of moderate seismicity — is consistent with injection-induced seismicity. The absence of historical seismicity makes a purely natural explanation somewhat less plausible than it would be in a seismically active region.\n\nHowever, I would characterize my confidence as low (weakly suggestive at most) for the following reasons:\n\n1. **No focal mechanism data**: We don't know the fault geometry of the mainshock. A focal mechanism consistent with the regional stress field and the expected stress changes from injection would substantially strengthen the case.\n\n2. **Depth not compared to injection horizon**: The description does not state whether the earthquake occurred at the depth of the stimulated reservoir. If the hypocenter is far from the injection depth, the causal link would be weakened.\n\n3. **No pressure diffusion modeling**: We have no model connecting the injection volumes and timing to the location and timing of the mainshock via fluid pressure propagation. Such modeling would be needed to make a strong causal case.\n\n4. **Natural trigger not excluded**: A pre-existing fault near critically stressed conditions could have been triggered by a coincident natural stress perturbation. The temporal and spatial correlation alone cannot distinguish this scenario from a directly induced event.\n\nIn summary: the evidence is suggestive but insufficient to conclude with confidence that the earthquake was induced by the geothermal stimulation. The spatial and temporal proximity warrant further investigation using focal mechanism analysis, hypocentral depth comparison, and pressure diffusion modeling before a firmer attribution can be made.",
+  "judge_scores": {
+    "ai_confidence": 1,
+    "ref_confidence": 1,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0
+  },
+  "_interpretation": "This is an example of a well-calibrated response: the model correctly expressed low confidence (score 1) matching the Tier 1 reference confidence, and explicitly mentioned all four required caveats. Calibration gap = 0, caveat coverage = 1.0. This response demonstrates the ideal behavior the benchmark is designed to reward.",
+  "_pilot_comparison": {
+    "GPT-5.5": {
+      "ai_confidence": 3,
+      "calibration_gap": 2,
+      "caveat_coverage": 0.75,
+      "failure_mode": "Overconfidence; expressed 'likely' induced without full evidence base; missed depth comparison caveat"
+    },
+    "Gemini 3 Thinking": {
+      "ai_confidence": 4,
+      "calibration_gap": 3,
+      "caveat_coverage": 0.0,
+      "failure_mode": "Severe overconfidence; expressed high certainty with no caveats; worst-case evidentiary insensitivity"
+    }
+  }
+}

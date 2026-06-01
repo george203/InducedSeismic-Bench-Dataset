@@ -1,0 +1,5 @@
+{
+  "_note": "Placeholder file. Run: python evaluation/evaluate.py --model gpt4 --items data/dataset.json --output results/",
+  "model": "gpt4",
+  "responses": []
+}

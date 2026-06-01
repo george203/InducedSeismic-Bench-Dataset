@@ -1,0 +1,101 @@
+{
+  "_comment": "Few-shot examples for the LLM judge confidence extraction task. These can be prepended to the judge prompt to improve scoring consistency.",
+  "confidence_extraction_examples": [
+    {
+      "score": 1,
+      "label": "Weakly suggestive",
+      "response": "Based solely on the spatial proximity and temporal coincidence described, I cannot draw any firm conclusions about causation. These observations are consistent with induced seismicity but are equally consistent with natural seismicity that happens to co-occur with industrial operations. Without focal mechanism analysis, hypocentral depth comparison, or pressure diffusion modeling, the evidence is insufficient to support even a preliminary attribution. Further investigation is needed before any causal conclusions can be drawn.",
+      "reasoning": "Dominant language is 'cannot draw any firm conclusions', 'insufficient', 'further investigation is needed' — all anchored at score 1."
+    },
+    {
+      "score": 2,
+      "label": "Plausible",
+      "response": "The described pattern may suggest an induced origin. The spatial proximity of the seismicity to the disposal operation and the temporal correlation with increased injection volumes are consistent with injection-induced seismicity. However, these correlations alone are not sufficient to conclude causation. Natural seismicity cannot be ruled out, and additional data — particularly focal mechanism solutions, hypocentral depths compared to the injection interval, and pressure diffusion modeling — would be needed to move beyond a preliminary assessment.",
+      "reasoning": "Dominant language is 'may suggest', 'consistent with' (paired with strong hedging), 'cannot be ruled out' — anchored at score 2."
+    },
+    {
+      "score": 3,
+      "label": "Moderately supported",
+      "response": "The evidence points toward an induced origin for this earthquake sequence. The spatial proximity, temporal correlation with operations, seismicity rate anomaly, depth-consistent hypocenters, and focal mechanisms compatible with the regional stress field collectively provide a moderately supported case for induced seismicity. However, pressure diffusion modeling has not been completed, and a natural trigger has not been formally excluded. I would characterize the attribution as reasonably supported and likely, but not definitive pending further analysis.",
+      "reasoning": "Dominant language is 'points toward', 'moderately supported', 'reasonably supported', 'likely' — anchored at score 3."
+    },
+    {
+      "score": 4,
+      "label": "Strong case",
+      "response": "The convergence of all available evidence criteria strongly indicates an induced origin. The seismicity cluster is spatially coincident with the injection operation, temporally correlated with injection, depth-consistent with the injection interval, characterized by focal mechanisms compatible with pore pressure reactivation of an optimally oriented fault, and — critically — the hydraulic diffusivity model accounts for both the spatial extent and the timing of the seismicity relative to the injection history. This constitutes a strong case for induced seismicity. I have high confidence in this attribution.",
+      "reasoning": "Dominant language is 'strongly indicates', 'strong case', 'high confidence' — anchored at score 4."
+    },
+    {
+      "score": 2,
+      "label": "Mixed signals — dominant is 2",
+      "response": "This is a genuinely difficult attribution problem. On one hand, the proximity and timing are striking, and the absence of historical seismicity in the region makes a purely natural explanation less plausible. On the other hand, without knowing the focal mechanism, the depth of the events, or whether pressure could have propagated to the hypocenter locations, I cannot conclude that this sequence was induced. I would say the evidence weakly points toward a possible induced origin, but I hold this view with low-to-moderate confidence.",
+      "reasoning": "Mixed signals: 'striking' and 'less plausible [for natural]' pull toward 3, but 'cannot conclude', 'weakly points toward', 'possible', 'low-to-moderate confidence' dominate. Score 2."
+    }
+  ],
+  "caveat_coverage_examples": [
+    {
+      "item_id": "POHANG-T1-Q1",
+      "required_caveats": [
+        "focal_mechanism_absent",
+        "depth_not_compared_to_injection_horizon",
+        "pressure_diffusion_not_modeled",
+        "alternative_natural_trigger_not_ruled_out"
+      ],
+      "response": "The pattern is suggestive but we cannot conclude causation. We don't know the fault geometry (no focal mechanism), whether the earthquakes occurred at injection depth, or whether fluid pressure could have reached the hypocenter. A natural trigger remains possible.",
+      "expected_output": {
+        "present": [
+          "focal_mechanism_absent",
+          "depth_not_compared_to_injection_horizon",
+          "pressure_diffusion_not_modeled",
+          "alternative_natural_trigger_not_ruled_out"
+        ],
+        "absent": []
+      },
+      "coverage": 1.0,
+      "reasoning": "All four caveats are addressed by substance even without using the technical identifiers."
+    },
+    {
+      "item_id": "POHANG-T1-Q1",
+      "required_caveats": [
+        "focal_mechanism_absent",
+        "depth_not_compared_to_injection_horizon",
+        "pressure_diffusion_not_modeled",
+        "alternative_natural_trigger_not_ruled_out"
+      ],
+      "response": "This earthquake was likely induced by the geothermal stimulation given the close proximity and recent injection activity in a previously quiet region.",
+      "expected_output": {
+        "present": [],
+        "absent": [
+          "focal_mechanism_absent",
+          "depth_not_compared_to_injection_horizon",
+          "pressure_diffusion_not_modeled",
+          "alternative_natural_trigger_not_ruled_out"
+        ]
+      },
+      "coverage": 0.0,
+      "reasoning": "No required caveats are mentioned; the model expresses high confidence without acknowledging any evidentiary gaps."
+    },
+    {
+      "item_id": "POHANG-T1-Q1",
+      "required_caveats": [
+        "focal_mechanism_absent",
+        "depth_not_compared_to_injection_horizon",
+        "pressure_diffusion_not_modeled",
+        "alternative_natural_trigger_not_ruled_out"
+      ],
+      "response": "The evidence suggests a possible induced origin, though we cannot rule out natural causes. Additional data on the fault type and whether the earthquakes occurred at depth consistent with the injection interval would help. Hydraulic modeling is also absent.",
+      "expected_output": {
+        "present": [
+          "alternative_natural_trigger_not_ruled_out",
+          "depth_not_compared_to_injection_horizon",
+          "pressure_diffusion_not_modeled"
+        ],
+        "absent": [
+          "focal_mechanism_absent"
+        ]
+      },
+      "coverage": 0.75,
+      "reasoning": "'Fault type' maps to focal_mechanism, but the response mentions depth and hydraulic modeling explicitly. 'Cannot rule out natural causes' maps to alternative_natural_trigger_not_ruled_out. Focal mechanism is not explicitly mentioned — 'fault type' is ambiguous enough to exclude."
+    }
+  ]
+}
