@@ -1,9 +1,9 @@
 # InducedSeismic-Bench
 
-![Dataset Size](https://img.shields.io/badge/dataset-10%20items%20(draft)-orange)
+![Dataset Size](https://img.shields.io/badge/dataset-68%20items%20-orange)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-green)
-![Status](https://img.shields.io/badge/status-draft%20release-yellow)
+![Status](https://img.shields.io/badge/status-initial%20release-yellow)
 
 **InducedSeismic-Bench** is a benchmark for evaluating whether AI systems express
 calibrated confidence when attributing earthquake sequences to human industrial activity.
