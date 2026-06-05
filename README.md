@@ -10,7 +10,7 @@ calibrated confidence when attributing earthquake sequences to human industrial 
 
 **Authors:** George Austin, Richard Mach
 **Course:** ECE 209AS — Benchmarking Human Factors in AI for Science
-**Version:** 0.1.0-draft (10 items; full 250–300 item dataset in progress)
+**Version:** 0.5.0 68 items
 
 ---
 
