@@ -9,7 +9,9 @@
 calibrated confidence when attributing earthquake sequences to human industrial activity.
 
 **Authors:** George Austin, Richard Mach
+
 **Course:** ECE 209AS — Human Factors in AI
+
 **Version:** 0.5.0 68 items
 
 ---
