@@ -25,13 +25,18 @@ logger = logging.getLogger(__name__)
 MODEL_IDS = {
     "claude": "claude-sonnet-4-6",
     "gpt4": "gpt-4.1",
-    "gemini": "gemini-2.0-flash",
+    "gemini": "gemini-2.5-flash",
     "llama": "meta-llama/Llama-3.1-70B-Instruct",
 }
 
 MAX_TOKENS = 1024
+# Gemini 2.5 Flash uses internal "thinking" tokens that consume the max_tokens budget;
+# use a much higher limit so the actual response isn't starved.
+GEMINI_MAX_TOKENS = 8192
 RETRY_DELAY = 5  # seconds between retries
 MAX_RETRIES = 3
+# Per-model inter-request delay to respect free-tier rate limits (15 RPM → 4s minimum)
+INTER_ITEM_DELAY = {"gemini": 5}
 
 
 def _build_prompt(item: dict) -> str:
@@ -56,6 +61,19 @@ def _query_openai(prompt: str, model_id: str) -> str:
     response = client.chat.completions.create(
         model=model_id,
         max_tokens=MAX_TOKENS,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    return response.choices[0].message.content
+
+
+def _query_gemini(prompt: str, model_id: str) -> str:
+    client = openai.OpenAI(
+        api_key=os.environ["GEMINI_API_KEY"],
+        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+    )
+    response = client.chat.completions.create(
+        model=model_id,
+        max_tokens=GEMINI_MAX_TOKENS,
         messages=[{"role": "user", "content": prompt}],
     )
     return response.choices[0].message.content
@@ -105,10 +123,9 @@ def run_model(
             raise EnvironmentError("OPENAI_API_KEY not set")
         query_fn = lambda p: _query_with_retry(_query_openai, p, model_id)
     elif model == "gemini":
-        # Gemini uses the OpenAI-compatible endpoint via OPENAI_API_KEY or GEMINI_API_KEY
-        if not os.environ.get("OPENAI_API_KEY"):
-            raise EnvironmentError("OPENAI_API_KEY (or Gemini-compatible key) not set")
-        query_fn = lambda p: _query_with_retry(_query_openai, p, model_id)
+        if not os.environ.get("GEMINI_API_KEY"):
+            raise EnvironmentError("GEMINI_API_KEY not set")
+        query_fn = lambda p: _query_with_retry(_query_gemini, p, model_id)
     elif model == "llama":
         if not os.environ.get("OPENAI_API_KEY"):
             raise EnvironmentError("OPENAI_API_KEY (for OpenAI-compatible LLaMA endpoint) not set")
@@ -117,6 +134,7 @@ def run_model(
         raise ValueError(f"Model '{model}' not implemented")
 
     responses = []
+    delay = INTER_ITEM_DELAY.get(model, 0)
     for item in tqdm(items, desc=f"Querying {model}"):
         prompt = _build_prompt(item)
         try:
@@ -126,6 +144,8 @@ def run_model(
             logger.error("Failed on item %s: %s", item["item_id"], e)
             response_text = f"ERROR: {e}"
             status = "error"
+        if delay:
+            time.sleep(delay)
 
         responses.append({
             "item_id": item["item_id"],

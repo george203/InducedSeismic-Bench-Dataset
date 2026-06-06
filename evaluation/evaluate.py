@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import os
 import sys
 from pathlib import Path
 
@@ -90,7 +91,19 @@ def compute_and_print_metrics(scored: list[dict], model: str) -> dict:
 
     gap_result = calibration_gap(ai_scores, ref_scores, tiers=tiers)
     cov_result = caveat_coverage(req_lists, mentioned, tiers=tiers)
-    sens_result = tier_sensitivity(ai_scores, ref_scores, case_ids, tiers)
+
+    # Only cases with all 4 tiers yield reliable Spearman ρ
+    _FULL_TIER_CASES = {
+        "BASEL", "GEYSERS", "GRONING", "PARADOX", "PAWNEE",
+        "POHANG", "PRAGUE", "RATON", "YTOWN",
+    }
+    ft_idx = [i for i, c in enumerate(case_ids) if c in _FULL_TIER_CASES]
+    sens_result = tier_sensitivity(
+        [ai_scores[i] for i in ft_idx],
+        [ref_scores[i] for i in ft_idx],
+        [case_ids[i] for i in ft_idx],
+        [tiers[i] for i in ft_idx],
+    )
 
     summary = {
         "model": model,
@@ -126,6 +139,13 @@ def compute_and_print_metrics(scored: list[dict], model: str) -> dict:
 
 
 def main():
+    # Load .env from repo root (no-op if keys already set in environment)
+    try:
+        from dotenv import load_dotenv
+        load_dotenv(Path(__file__).parent.parent / ".env")
+    except ImportError:
+        pass
+
     parser = argparse.ArgumentParser(
         description="Run InducedSeismic-Bench evaluation pipeline"
     )
@@ -180,8 +200,6 @@ def main():
         responses = run_model(model_name, items, output_path=raw_path)
         logger.info("Responses saved to %s", raw_path)
 
-    # Initialize judge client
-    import os
     api_key = os.environ.get("ANTHROPIC_API_KEY")
     if not api_key:
         logger.error("ANTHROPIC_API_KEY not set — required for LLM judge")
