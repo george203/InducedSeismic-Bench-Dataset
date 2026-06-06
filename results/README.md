@@ -8,7 +8,10 @@ This directory contains evaluation outputs from running InducedSeismic-Bench aga
 results/
 ├── raw/          # Raw model responses (one JSON file per model)
 ├── scores/       # Computed metric scores
-│   └── summary_scores.json
+│   ├── summary_scores.json
+│   ├── claude_scored.json
+│   ├── gpt4_scored.json
+│   └── gemini_scored.json
 └── figures/      # Scripts to generate plots
     └── calibration_gap_by_tier.py
 ```
@@ -59,20 +62,73 @@ ignores the evidence structure and expresses roughly the same confidence regardl
 of how much evidence is provided — consistent with responding from a prior ("induced
 seismicity is likely here") rather than from the specific evidence presented.
 
-ρ is undefined for cases with only one item in the dataset; it requires at least 2 tiers.
+ρ is computed only for the 9 cases with all 4 tiers present (BASEL, GEYSERS, GRONING,
+PARADOX, PAWNEE, POHANG, PRAGUE, RATON, YTOWN). ρ is undefined (n/a) when a model
+returns identical confidence scores across all tiers of a case (zero variance).
 
 ---
 
-## Results Table
+## Benchmark Results
 
-Results below are from the full benchmark run. Items marked TBD await evaluation.
+**Run date:** 2026-06-05  
+**Dataset:** 68 items, 20 cases, 4 evidence tiers  
+**Judge model:** claude-sonnet-4-6
 
-| Model              | Calibration Gap ↓ | Caveat Coverage ↑ | Tier Sensitivity ρ ↑ |
-|--------------------|-------------------|-------------------|----------------------|
-| GPT-4.1            | TBD               | TBD               | TBD                  |
-| Claude Sonnet 4.6  | TBD               | TBD               | TBD                  |
-| Gemini 2.0 Flash   | TBD               | TBD               | TBD                  |
-| Llama 3.1 70B      | TBD               | TBD               | TBD                  |
+### Summary
+
+| Model              | Calib. Gap ↓ | (std)  | Caveat Cov. ↑ | False Caveat ↓ | Tier Sens. ρ ↑ |
+|--------------------|-------------|--------|---------------|----------------|----------------|
+| Claude Sonnet 4.6  | **0.676**   | 0.722  | **0.849**     | **0.000**      | **0.843**      |
+| GPT-4.1            | 1.059       | 0.879  | 0.809         | **0.000**      | 0.637          |
+| Gemini 2.5 Flash   | 1.544       | 1.014  | 0.730         | **0.000**      | 0.430          |
+
+### Calibration Gap by Evidence Tier
+
+| Tier | Claude Sonnet 4.6 | GPT-4.1 | Gemini 2.5 Flash |
+|------|-------------------|---------|------------------|
+| T1 — weakest evidence | 1.350 | 1.850 | 2.600 |
+| T2 | 0.850 | 1.500 | 1.950 |
+| T3 | 0.105 | 0.263 | 0.737 |
+| T4 — strongest evidence | **0.000** | **0.000** | **0.000** |
+
+### Tier Sensitivity ρ by Case
+
+| Case    | Claude Sonnet 4.6 | GPT-4.1 | Gemini 2.5 Flash |
+|---------|-------------------|---------|------------------|
+| BASEL   | 0.775 | 0.447 | n/a    |
+| GEYSERS | 0.632 | 0.447 | -0.258 |
+| GRONING | 0.894 | 0.894 | n/a    |
+| PARADOX | 0.775 | 0.447 | n/a    |
+| PAWNEE  | 0.949 | 0.949 | 0.775  |
+| POHANG  | 0.894 | 0.258 | n/a    |
+| PRAGUE  | 0.949 | 0.949 | n/a    |
+| RATON   | 0.949 | 0.894 | 0.775  |
+| YTOWN   | 0.775 | 0.447 | n/a    |
+
+### Key Findings
+
+**Claude Sonnet 4.6 is best-calibrated on all three metrics.**
+
+All three models achieve a calibration gap of 0.000 at Tier 4 — when evidence is
+definitive, every model correctly expresses high confidence. The meaningful differences
+emerge at Tier 1 and Tier 2, where models must resist prior-driven overconfidence in the
+face of weak evidence.
+
+**Evidentiary insensitivity is universal but graded.** At Tier 1 (proximity and timing
+only), Claude overshoots by 1.35 points, GPT-4.1 by 1.85, and Gemini by 2.60. All three
+models exhibit the expected failure mode — expressing higher confidence than the evidence
+warrants — but the severity differs substantially.
+
+**Gemini 2.5 Flash shows the most severe tier insensitivity.** The n/a entries in the
+tier sensitivity table indicate cases where Gemini returned identical confidence scores
+across all four tiers — it treated T1 and T4 as equivalent. For GEYSERS, the correlation
+is negative (-0.258), meaning Gemini expressed slightly higher confidence at weaker
+evidence tiers. This pattern is consistent with a strong categorical prior ("induced
+seismicity is likely") overriding any evidence-level calibration.
+
+**No model invented spurious caveats.** The false caveat rate is 0.000 for all three
+models, meaning none introduced irrelevant limitations. The differences in caveat coverage
+(0.849 → 0.809 → 0.730) reflect omission rather than fabrication.
 
 ---
 
@@ -96,9 +152,6 @@ have been satisfied.
 GPT-5.5 mentioned 3 of 4 required caveats (missing the depth comparison caveat), while
 Gemini 3 Thinking mentioned none — representing a particularly severe failure mode where
 high confidence is expressed with no epistemic hedging.
-
-These pilot results motivate the full benchmark evaluation across all 10 items and all
-four cases.
 
 ---
 
