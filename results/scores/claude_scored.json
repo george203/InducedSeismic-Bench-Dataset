@@ -1,0 +1,1080 @@
+[
+  {
+    "item_id": "PRAGUE-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "PRAGUE"
+  },
+  {
+    "item_id": "PRAGUE-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "PRAGUE"
+  },
+  {
+    "item_id": "PRAGUE-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "PRAGUE"
+  },
+  {
+    "item_id": "PRAGUE-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "generalizability_limited"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "PRAGUE"
+  },
+  {
+    "item_id": "POHANG-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [
+      "depth_not_compared_to_injection_horizon"
+    ],
+    "caveat_coverage": 0.75,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "POHANG"
+  },
+  {
+    "item_id": "POHANG-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon"
+    ],
+    "caveat_absent": [
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_coverage": 0.6666666666666666,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "POHANG"
+  },
+  {
+    "item_id": "POHANG-T3-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 3,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "POHANG"
+  },
+  {
+    "item_id": "RATON-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "RATON"
+  },
+  {
+    "item_id": "RATON-T2-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 2,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "RATON"
+  },
+  {
+    "item_id": "GRONING-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "GRONING"
+  },
+  {
+    "item_id": "POHANG-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "POHANG"
+  },
+  {
+    "item_id": "RATON-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "RATON"
+  },
+  {
+    "item_id": "RATON-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "RATON"
+  },
+  {
+    "item_id": "GRONING-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon"
+    ],
+    "caveat_absent": [
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_coverage": 0.6666666666666666,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "GRONING"
+  },
+  {
+    "item_id": "GRONING-T3-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 3,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "GRONING"
+  },
+  {
+    "item_id": "GRONING-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "GRONING"
+  },
+  {
+    "item_id": "PAWNEE-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "PAWNEE"
+  },
+  {
+    "item_id": "PAWNEE-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "PAWNEE"
+  },
+  {
+    "item_id": "PAWNEE-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "PAWNEE"
+  },
+  {
+    "item_id": "PAWNEE-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "PAWNEE"
+  },
+  {
+    "item_id": "GUYGRB-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "GUYGRB"
+  },
+  {
+    "item_id": "GUYGRB-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "GUYGRB"
+  },
+  {
+    "item_id": "GUYGRB-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "GUYGRB"
+  },
+  {
+    "item_id": "YTOWN-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "YTOWN"
+  },
+  {
+    "item_id": "YTOWN-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "YTOWN"
+  },
+  {
+    "item_id": "YTOWN-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "YTOWN"
+  },
+  {
+    "item_id": "YTOWN-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "YTOWN"
+  },
+  {
+    "item_id": "BASEL-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "BASEL"
+  },
+  {
+    "item_id": "BASEL-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "BASEL"
+  },
+  {
+    "item_id": "BASEL-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "BASEL"
+  },
+  {
+    "item_id": "BASEL-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "BASEL"
+  },
+  {
+    "item_id": "PREESE-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "PREESE"
+  },
+  {
+    "item_id": "PREESE-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "PREESE"
+  },
+  {
+    "item_id": "PREESE-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "PREESE"
+  },
+  {
+    "item_id": "PARADOX-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "PARADOX"
+  },
+  {
+    "item_id": "PARADOX-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "PARADOX"
+  },
+  {
+    "item_id": "PARADOX-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "PARADOX"
+  },
+  {
+    "item_id": "PARADOX-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "PARADOX"
+  },
+  {
+    "item_id": "GEYSERS-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "GEYSERS"
+  },
+  {
+    "item_id": "GEYSERS-T2-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 2,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "GEYSERS"
+  },
+  {
+    "item_id": "GEYSERS-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "GEYSERS"
+  },
+  {
+    "item_id": "GEYSERS-T4-Q1",
+    "ai_confidence": 4,
+    "ref_confidence": 4,
+    "calibration_gap": 0,
+    "caveat_present": [],
+    "caveat_absent": [
+      "generalizability_limited"
+    ],
+    "caveat_coverage": 0.0,
+    "model": "claude",
+    "tier": 4,
+    "case_id": "GEYSERS"
+  },
+  {
+    "item_id": "KOYNA-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "KOYNA"
+  },
+  {
+    "item_id": "KOYNA-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "KOYNA"
+  },
+  {
+    "item_id": "KOYNA-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "KOYNA"
+  },
+  {
+    "item_id": "FOXCRK-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "FOXCRK"
+  },
+  {
+    "item_id": "FOXCRK-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "FOXCRK"
+  },
+  {
+    "item_id": "FOXCRK-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "FOXCRK"
+  },
+  {
+    "item_id": "CASTOR-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "CASTOR"
+  },
+  {
+    "item_id": "CASTOR-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "CASTOR"
+  },
+  {
+    "item_id": "CASTOR-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "CASTOR"
+  },
+  {
+    "item_id": "DFW-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "DFW"
+  },
+  {
+    "item_id": "DFW-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "DFW"
+  },
+  {
+    "item_id": "DFW-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_coverage": 0.5,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "DFW"
+  },
+  {
+    "item_id": "AZLE-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "AZLE"
+  },
+  {
+    "item_id": "AZLE-T2-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 2,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "AZLE"
+  },
+  {
+    "item_id": "AZLE-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [
+      "fault_geometry_unknown"
+    ],
+    "caveat_coverage": 0.6666666666666666,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "AZLE"
+  },
+  {
+    "item_id": "CUSHING-T1-Q1",
+    "ai_confidence": 1,
+    "ref_confidence": 1,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "CUSHING"
+  },
+  {
+    "item_id": "CUSHING-T2-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 2,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "CUSHING"
+  },
+  {
+    "item_id": "CUSHING-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "CUSHING"
+  },
+  {
+    "item_id": "POLNDTWP-T1-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 1,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "POLNDTWP"
+  },
+  {
+    "item_id": "POLNDTWP-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "POLNDTWP"
+  },
+  {
+    "item_id": "LANDAU-T1-Q1",
+    "ai_confidence": 1,
+    "ref_confidence": 1,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "LANDAU"
+  },
+  {
+    "item_id": "LANDAU-T2-Q1",
+    "ai_confidence": 2,
+    "ref_confidence": 2,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "LANDAU"
+  },
+  {
+    "item_id": "LANDAU-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "LANDAU"
+  },
+  {
+    "item_id": "PRSNRD-T1-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 1,
+    "calibration_gap": 2,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled",
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 1,
+    "case_id": "PRSNRD"
+  },
+  {
+    "item_id": "PRSNRD-T2-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 2,
+    "calibration_gap": 1,
+    "caveat_present": [
+      "focal_mechanism_absent",
+      "depth_not_compared_to_injection_horizon",
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [],
+    "caveat_coverage": 1.0,
+    "model": "claude",
+    "tier": 2,
+    "case_id": "PRSNRD"
+  },
+  {
+    "item_id": "PRSNRD-T3-Q1",
+    "ai_confidence": 3,
+    "ref_confidence": 3,
+    "calibration_gap": 0,
+    "caveat_present": [
+      "pressure_diffusion_not_modeled"
+    ],
+    "caveat_absent": [
+      "alternative_natural_trigger_not_ruled_out"
+    ],
+    "caveat_coverage": 0.5,
+    "model": "claude",
+    "tier": 3,
+    "case_id": "PRSNRD"
+  }
+]

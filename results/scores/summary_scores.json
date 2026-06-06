@@ -1,23 +1,38 @@
 {
   "_note": "This file is populated by evaluation/evaluate.py. Placeholder structure shown below.",
   "_schema": {
-    "model": "string — model identifier",
-    "n_items": "integer — number of items evaluated",
+    "model": "string \u2014 model identifier",
+    "n_items": "integer \u2014 number of items evaluated",
     "calibration_gap": {
       "mean_gap": "float",
       "std_gap": "float",
-      "by_tier": {"1": "float", "2": "float", "3": "float", "4": "float"},
+      "by_tier": {
+        "1": "float",
+        "2": "float",
+        "3": "float",
+        "4": "float"
+      },
       "n_items": "integer"
     },
     "caveat_coverage": {
       "mean_coverage": "float",
       "false_caveat_rate": "float",
-      "by_tier": {"1": "float", "2": "float", "3": "float", "4": "float"},
+      "by_tier": {
+        "1": "float",
+        "2": "float",
+        "3": "float",
+        "4": "float"
+      },
       "n_items": "integer"
     },
     "tier_sensitivity": {
       "mean_rho": "float",
-      "by_case": {"PRAGUE": "float", "POHANG": "float", "RATON": "float", "GRONING": "float"},
+      "by_case": {
+        "PRAGUE": "float",
+        "POHANG": "float",
+        "RATON": "float",
+        "GRONING": "float"
+      },
       "n_cases": "integer"
     }
   },
@@ -27,20 +42,32 @@
     "calibration_gap": {
       "mean_gap": 2.0,
       "std_gap": 0.0,
-      "by_tier": {"1": 2.0, "2": null, "3": null, "4": null},
+      "by_tier": {
+        "1": 2.0,
+        "2": null,
+        "3": null,
+        "4": null
+      },
       "n_items": 1
     },
     "caveat_coverage": {
       "mean_coverage": 0.75,
       "false_caveat_rate": 0.0,
-      "by_tier": {"1": 0.75, "2": null, "3": null, "4": null},
+      "by_tier": {
+        "1": 0.75,
+        "2": null,
+        "3": null,
+        "4": null
+      },
       "n_items": 1
     },
     "tier_sensitivity": {
       "mean_rho": null,
-      "by_case": {"POHANG": null},
+      "by_case": {
+        "POHANG": null
+      },
       "n_cases": 0,
-      "_note": "ρ undefined for single-item evaluation"
+      "_note": "\u03c1 undefined for single-item evaluation"
     }
   },
   "pilot_gemini3thinking_pohang_t1_only": {
@@ -49,20 +76,155 @@
     "calibration_gap": {
       "mean_gap": 3.0,
       "std_gap": 0.0,
-      "by_tier": {"1": 3.0, "2": null, "3": null, "4": null},
+      "by_tier": {
+        "1": 3.0,
+        "2": null,
+        "3": null,
+        "4": null
+      },
       "n_items": 1
     },
     "caveat_coverage": {
       "mean_coverage": 0.0,
       "false_caveat_rate": 0.0,
-      "by_tier": {"1": 0.0, "2": null, "3": null, "4": null},
+      "by_tier": {
+        "1": 0.0,
+        "2": null,
+        "3": null,
+        "4": null
+      },
       "n_items": 1
     },
     "tier_sensitivity": {
       "mean_rho": null,
-      "by_case": {"POHANG": null},
+      "by_case": {
+        "POHANG": null
+      },
       "n_cases": 0,
-      "_note": "ρ undefined for single-item evaluation"
+      "_note": "\u03c1 undefined for single-item evaluation"
+    }
+  },
+  "claude": {
+    "model": "claude",
+    "n_items": 68,
+    "calibration_gap": {
+      "mean_gap": 0.6764705882352942,
+      "std_gap": 0.7215484276543018,
+      "n_items": 68,
+      "by_tier": {
+        "1": 1.35,
+        "2": 0.85,
+        "3": 0.10526315789473684,
+        "4": 0.0
+      }
+    },
+    "caveat_coverage": {
+      "mean_coverage": 0.8492647058823529,
+      "false_caveat_rate": 0.0,
+      "n_items": 68,
+      "by_tier": {
+        "1": 0.9875,
+        "2": 0.9666666666666666,
+        "3": 0.9298245614035087,
+        "4": 0.1111111111111111
+      }
+    },
+    "tier_sensitivity": {
+      "mean_rho": 0.8434610906566111,
+      "by_case": {
+        "PRAGUE": 0.9486832980505139,
+        "POHANG": 0.8944271909999159,
+        "RATON": 0.9486832980505139,
+        "GRONING": 0.8944271909999159,
+        "PAWNEE": 0.9486832980505139,
+        "YTOWN": 0.7745966692414834,
+        "BASEL": 0.7745966692414834,
+        "PARADOX": 0.7745966692414834,
+        "GEYSERS": 0.632455532033676
+      },
+      "n_cases": 9
+    }
+  },
+  "gpt4": {
+    "model": "gpt4",
+    "n_items": 68,
+    "calibration_gap": {
+      "mean_gap": 1.0588235294117647,
+      "std_gap": 0.8789809727649852,
+      "n_items": 68,
+      "by_tier": {
+        "1": 1.85,
+        "2": 1.5,
+        "3": 0.2631578947368421,
+        "4": 0.0
+      }
+    },
+    "caveat_coverage": {
+      "mean_coverage": 0.8088235294117647,
+      "false_caveat_rate": 0.0,
+      "n_items": 68,
+      "by_tier": {
+        "1": 0.95,
+        "2": 0.9666666666666666,
+        "3": 0.8245614035087719,
+        "4": 0.1111111111111111
+      }
+    },
+    "tier_sensitivity": {
+      "mean_rho": 0.6370304722053169,
+      "by_case": {
+        "PRAGUE": 0.9486832980505139,
+        "POHANG": 0.2581988897471611,
+        "RATON": 0.8944271909999159,
+        "GRONING": 0.8944271909999159,
+        "PAWNEE": 0.9486832980505139,
+        "YTOWN": 0.4472135954999579,
+        "BASEL": 0.4472135954999579,
+        "PARADOX": 0.4472135954999579,
+        "GEYSERS": 0.4472135954999579
+      },
+      "n_cases": 9
+    }
+  },
+  "gemini": {
+    "model": "gemini",
+    "n_items": 68,
+    "calibration_gap": {
+      "mean_gap": 1.5441176470588236,
+      "std_gap": 1.013841865991029,
+      "n_items": 68,
+      "by_tier": {
+        "1": 2.6,
+        "2": 1.95,
+        "3": 0.7368421052631579,
+        "4": 0.0
+      }
+    },
+    "caveat_coverage": {
+      "mean_coverage": 0.7303921568627452,
+      "false_caveat_rate": 0.0,
+      "n_items": 68,
+      "by_tier": {
+        "1": 0.95,
+        "2": 0.95,
+        "3": 0.6140350877192983,
+        "4": 0.0
+      }
+    },
+    "tier_sensitivity": {
+      "mean_rho": 0.4303314829119353,
+      "by_case": {
+        "PRAGUE": NaN,
+        "POHANG": NaN,
+        "RATON": 0.7745966692414834,
+        "GRONING": NaN,
+        "PAWNEE": 0.7745966692414834,
+        "YTOWN": NaN,
+        "BASEL": NaN,
+        "PARADOX": NaN,
+        "GEYSERS": -0.2581988897471611
+      },
+      "n_cases": 3
     }
   }
 }
