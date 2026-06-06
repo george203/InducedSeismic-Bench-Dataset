@@ -1,18 +1,19 @@
 # InducedSeismic-Bench
 
-![Dataset Size](https://img.shields.io/badge/dataset-68%20items%20-orange)
+![Dataset Size](https://img.shields.io/badge/dataset-68%20items-orange)
+![Cases](https://img.shields.io/badge/cases-20-orange)
 ![License](https://img.shields.io/badge/license-CC%20BY%204.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10%2B-green)
-![Status](https://img.shields.io/badge/status-initial%20release-yellow)
+![Status](https://img.shields.io/badge/status-v1.0%20results%20included-brightgreen)
 
 **InducedSeismic-Bench** is a benchmark for evaluating whether AI systems express
 calibrated confidence when attributing earthquake sequences to human industrial activity.
 
 **Authors:** George Austin, Richard Mach
 
-**Course:** ECE 209AS — Human Factors in AI
+**Course:** ECE 209AS, Human Factors in AI
 
-**Version:** 0.5.0 68 items
+**Version:** 1.0.0 (68 items, 20 cases, full benchmark results)
 
 ---
 
@@ -20,11 +21,11 @@ calibrated confidence when attributing earthquake sequences to human industrial 
 
 ### What is induced seismicity attribution?
 
-Earthquakes can be triggered by industrial operations — most commonly by injecting fluids
+Earthquakes can be triggered by industrial operations, most commonly by injecting fluids
 into the subsurface (wastewater disposal, geothermal stimulation) or by extracting large
-volumes of gas or fluids (causing reservoir compaction). When a seismicity cluster occurs
+volumes of gas or fluids that cause reservoir compaction. When a seismicity cluster occurs
 near an industrial site, scientists must evaluate whether the operation caused it. This
-process — **induced seismicity attribution** — involves building an evidence case across
+process, **induced seismicity attribution**, involves building an evidence case across
 multiple independent criteria:
 
 1. **Spatial proximity** of seismicity to the operation
@@ -33,15 +34,16 @@ multiple independent criteria:
 4. **Physical consistency** (hypocentral depths, focal mechanisms)
 5. **Mechanistic modeling** (pressure diffusion connecting injection to seismicity)
 
-Attribution is not binary. A well-calibrated scientist expresses confidence proportional
-to which criteria are satisfied, explicitly flags which key analyses are missing, and
-avoids over-committing based on superficial pattern matching.
+Attribution is graded, not binary. A well-calibrated scientist expresses confidence
+proportional to which criteria are satisfied, explicitly flags which key analyses are
+missing, and holds back from over-committing on superficial pattern matching.
 
 ### What human factor does this benchmark test?
 
-**Calibrated causal attribution under evidentiary ambiguity** — expressing confidence
-proportional to which specific evidence criteria have been satisfied, not a general prior
-about what caused similar-looking situations.
+**Calibrated causal attribution under evidentiary ambiguity**: expressing confidence
+proportional to which specific evidence criteria have been satisfied, anchored in the
+disclosed evidence. The benchmark measures whether confidence is driven by that evidence
+or by a general prior about similar-looking situations.
 
 This benchmark targets four AI failure modes:
 
@@ -55,16 +57,53 @@ This benchmark targets four AI failure modes:
 ### Why does it matter?
 
 Induced seismicity attribution has direct regulatory, legal, and public safety consequences:
-well shutdowns, liability for property damage, permitting decisions. When AI systems express
-high confidence based only on proximity and timing, they risk causing **automation bias** —
-seismologists may stop checking additional evidence criteria they would otherwise verify.
-A well-documented case from 2018 illustrates this: two frontier AI models evaluated a
-Tier 1 item (proximity and timing only) and expressed confidence scores of 3 and 4
-(out of 4) respectively, when the reference confidence was 1. Neither mentioned any
-of the four required caveats about missing evidence.
+well shutdowns, liability for property damage, and permitting decisions. When AI systems
+express high confidence based only on proximity and timing, they create a risk of
+**automation bias**: seismologists may stop checking additional evidence criteria they
+would otherwise verify. The benchmark results below show this pattern directly. At Tier 1,
+where the calibrated reference confidence is 1 out of 4, all three evaluated models
+expressed mean confidence above 2.3, and the weakest model reached 3.6.
 
 InducedSeismic-Bench is the first benchmark specifically targeting this failure mode in
 geoscience.
+
+---
+
+## Dataset Composition
+
+The benchmark contains **68 items** drawn from **20 documented seismicity sequences**
+across **14 regions** and four operation types. Each case is decomposed into up to four
+evidence tiers of increasing completeness.
+
+### By operation type
+
+| Operation type | Items |
+|---|---|
+| Wastewater disposal | 32 |
+| Geothermal stimulation | 15 |
+| Hydraulic fracturing | 11 |
+| Reservoir impoundment / gas extraction | 10 |
+
+### By evidence tier
+
+| Tier | Label | Reference confidence | Items | Required caveats |
+|---|---|---|---|---|
+| 1 | Weakly suggestive | 1 | 20 | 4 |
+| 2 | Plausible | 2 | 20 | 3 |
+| 3 | Moderately supported | 3 | 19 | 2 |
+| 4 | Strong case | 4 | 9 | 1 |
+
+### Tier coverage by case
+
+- **9 cases with all four tiers** (T1–T4): BASEL, GEYSERS, GRONING, PARADOX, PAWNEE,
+  POHANG, PRAGUE, RATON, YTOWN
+- **10 cases with three tiers** (T1–T3): AZLE, CASTOR, CUSHING, DFW, FOXCRK, GUYGRB,
+  KOYNA, LANDAU, PREESE, PRSNRD
+- **1 case with two tiers** (T1–T2): POLNDTWP
+
+The cases span Oklahoma, South Korea, the Netherlands, Switzerland, the United Kingdom,
+Canada, Spain, Germany, India, and additional U.S. states. Evidence descriptions average
+155 words. Tier sensitivity (defined below) is computed only on the nine fully-tiered cases.
 
 ---
 
@@ -89,7 +128,7 @@ Each item in `data/dataset.json` conforms to `data/schema.json` (JSON Schema dra
 | `reference_confidence` | int (1–4) | Expert reference confidence score |
 | `reference_confidence_label` | string | Human-readable label for reference confidence |
 | `required_caveats` | array | Caveats a calibrated response must mention |
-| `optional_caveats` | array | Appropriate but not required caveats |
+| `optional_caveats` | array | Optional caveats appropriate to mention |
 | `annotation_notes` | string | Annotator notes on ambiguity or adjudication |
 
 ### Evidence Component Vocabulary
@@ -131,9 +170,92 @@ inter_annotator_disagreement_flagged
     "alternative_natural_trigger_not_ruled_out"
   ],
   "optional_caveats": ["injection_volume_pressure_not_analyzed"],
-  "annotation_notes": "Note: reference_confidence discrepancy between slide deck (2) and dataset table (1). Tier 1 → 1 mapping used as canonical."
+  "annotation_notes": ""
 }
 ```
+
+---
+
+## Benchmark Results
+
+**Run date:** 2026-06-05
+**Dataset:** 68 items, 20 cases, 4 evidence tiers
+**Judge model:** claude-sonnet-4-6
+**Models evaluated:** Claude Sonnet 4.6, GPT-4.1, Gemini 2.5 Flash
+
+### Summary
+
+| Model | Calib. Gap ↓ | (std) | Caveat Cov. ↑ | False Caveat ↓ | Tier Sens. ρ ↑ |
+|---|---|---|---|---|---|
+| **Claude Sonnet 4.6** | **0.676** | 0.722 | **0.849** | **0.000** | **0.843** |
+| GPT-4.1 | 1.059 | 0.879 | 0.809 | **0.000** | 0.637 |
+| Gemini 2.5 Flash | 1.544 | 1.014 | 0.730 | **0.000** | 0.430 |
+
+Lower calibration gap is better. Higher caveat coverage and tier sensitivity are better.
+Claude Sonnet 4.6 leads on all three metrics, followed by GPT-4.1, then Gemini 2.5 Flash.
+The ordering is consistent across every metric.
+
+### Calibration gap by evidence tier
+
+| Tier | Claude Sonnet 4.6 | GPT-4.1 | Gemini 2.5 Flash |
+|---|---|---|---|
+| T1 (weakest evidence) | 1.350 | 1.850 | 2.600 |
+| T2 | 0.850 | 1.500 | 1.950 |
+| T3 | 0.105 | 0.263 | 0.737 |
+| T4 (strongest evidence) | **0.000** | **0.000** | **0.000** |
+
+All three models reach a calibration gap of exactly 0.000 at Tier 4. When the evidence is
+definitive, every model correctly expresses maximum confidence. The separation between
+models occurs at the weak-evidence tiers, where the calibrated response is to hold back
+from asserting an induced origin.
+
+### Mean expressed confidence by tier
+
+| Tier | Reference | Claude Sonnet 4.6 | GPT-4.1 | Gemini 2.5 Flash |
+|---|---|---|---|---|
+| T1 | 1.00 | 2.35 | 2.85 | 3.60 |
+| T2 | 2.00 | 2.85 | 3.50 | 3.95 |
+| T3 | 3.00 | 3.11 | 3.26 | 3.74 |
+| T4 | 4.00 | 4.00 | 4.00 | 4.00 |
+
+A calibrated model tracks the reference column, rising from 1 to 4. Each model begins
+elevated at Tier 1 and rises only gently. Gemini's mean confidence is already 3.60 at
+Tier 1 and moves just 0.40 points across the entire evidence range to Tier 4. This flatness
+is the signature of evidentiary insensitivity: confidence anchored near the top of the
+scale across all disclosed evidence levels.
+
+### Tier sensitivity
+
+Tier sensitivity is the Spearman rank correlation between expressed and reference confidence
+across the four tiers of a single case, averaged over the nine fully-tiered cases.
+
+- **Claude Sonnet 4.6:** ρ = 0.843, with ρ ≥ 0.77 on eight of nine cases.
+- **GPT-4.1:** ρ = 0.637, with notably weaker sensitivity on POHANG (ρ = 0.26).
+- **Gemini 2.5 Flash:** ρ = 0.430, computed on the three cases where ρ is defined. In six
+  of the nine fully-tiered cases, Gemini returned identical confidence across all four
+  tiers, making ρ undefined. On GEYSERS, Gemini's correlation was negative (ρ = −0.26),
+  meaning it expressed slightly higher confidence on weaker evidence. This is consistent
+  with a strong categorical prior overriding evidence-level calibration.
+
+### Key findings
+
+1. **Overconfidence on weak evidence is universal across the three models and graded in
+   severity.** At Tier 1, expressed confidence exceeds the reference by 1.35 (Claude), 1.85
+   (GPT-4.1), and 2.60 (Gemini) points.
+
+2. **The failure concentrates at the low-evidence tiers.** All models are perfectly
+   calibrated at Tier 4. Differences emerge entirely at Tiers 1 and 2.
+
+3. **Gemini treats minimal and complete evidence as equivalent** in two thirds of the
+   
+   confidence.
+
+4. **No model fabricated caveats.** The false caveat rate is 0.000 for all three models.
+   Differences in caveat coverage reflect omission of required caveats, not the addition of
+   spurious ones.
+
+Full per-item scores are in `results/scores/`, and raw model responses are in
+`results/raw/`. The figure script in `results/figures/` regenerates the calibration plots.
 
 ---
 
@@ -159,23 +281,27 @@ python evaluation/evaluate.py --model claude --items data/dataset.json --output 
 ```bash
 pip install -r evaluation/requirements.txt
 export ANTHROPIC_API_KEY=your_anthropic_key  # for Claude + LLM judge
-export OPENAI_API_KEY=your_openai_key         # for GPT-4 / Gemini / Llama
+export OPENAI_API_KEY=your_openai_key         # for GPT-4.1
+export GEMINI_API_KEY=your_gemini_key         # for Gemini (free tier available)
 ```
 
 **Step 2: Run evaluation**
 
 ```bash
-python evaluation/evaluate.py --model {claude|gpt4|gemini|llama} \
+python evaluation/evaluate.py --model {claude|gpt4|gemini} \
     --items data/dataset.json \
     --output results/
 ```
 
+The LLM judge always uses Claude, so `ANTHROPIC_API_KEY` is required for every run
+regardless of which model is being evaluated.
+
 **Step 3: Interpret outputs**
 
 The pipeline produces:
-- `results/raw/{model}_responses.json` — raw model text responses
-- `results/scores/{model}_scored.json` — per-item AI confidence, calibration gap, caveat coverage
-- `results/scores/summary_scores.json` — aggregated metrics across all items
+- `results/raw/{model}_responses.json`: raw model text responses
+- `results/scores/{model}_scored.json`: per-item AI confidence, calibration gap, caveat coverage
+- `results/scores/summary_scores.json`: aggregated metrics across all items
 
 A formatted table is printed to stdout on completion.
 
@@ -183,13 +309,14 @@ A formatted table is printed to stdout on completion.
 
 | Metric | Formula | Interpretation |
 |--------|---------|---------------|
-| **Calibration Gap** (↓) | `mean(|AI_conf − Ref_conf|)` | 0 = perfect; 3 = maximum mismatch |
+| **Calibration Gap** (↓) | `mean(\|AI_conf − Ref_conf\|)` | 0 = perfect; 3 = maximum mismatch |
 | **Caveat Coverage** (↑) | `required ∩ mentioned / required` | 1.0 = all required caveats mentioned |
 | **Tier Sensitivity ρ** (↑) | Spearman ρ per case across tiers | 1.0 = confidence correctly tracks evidence |
 
 Tier sensitivity near 0 or negative indicates the model is not responding to the evidence
-tier at all — it is expressing the same confidence regardless of how much evidence is
-provided.
+tier. It is expressing the same confidence across all evidence levels. ρ is undefined for a
+case when a model returns identical confidence on every tier (zero variance), and is
+computed only on the nine fully-tiered cases.
 
 ---
 
@@ -215,9 +342,9 @@ for item in items:
 InducedSeismic-Bench/
 ├── data/
 │   ├── schema.json          # JSON Schema definition
-│   ├── dataset.json         # All benchmark items
+│   ├── dataset.json         # All 68 benchmark items
 │   ├── dataset.csv          # CSV version
-│   └── cases/               # Case background documentation
+│   └── cases/               # Case background documentation (20 cases)
 ├── evaluation/
 │   ├── evaluate.py          # Main evaluation runner
 │   ├── metrics.py           # Metric computation
@@ -226,9 +353,14 @@ InducedSeismic-Bench/
 │   ├── run_model.py         # Model querying
 │   └── requirements.txt
 ├── results/
-│   ├── raw/                 # Raw model responses
-│   ├── scores/              # Computed metrics
-│   └── figures/             # Visualization scripts
+│   ├── raw/                 # Raw model responses (claude, gpt4, gemini)
+│   ├── scores/              # Per-item and summary metric scores
+│   │   ├── claude_scored.json
+│   │   ├── gpt4_scored.json
+│   │   ├── gemini_scored.json
+│   │   └── summary_scores.json
+│   ├── figures/             # Visualization scripts
+│   └── README.md            # Detailed results writeup
 ├── docs/
 │   ├── annotation_guide.md
 │   ├── evaluation_protocol.md
@@ -245,40 +377,38 @@ InducedSeismic-Bench/
 
 The following limitations should be understood before using or citing these results:
 
-1. **Dataset size**: The current release contains 10 items (draft). The full target is
-   250–300 items across additional cases and tiers. Metric estimates from 10 items have
-   high variance and should be interpreted as preliminary.
+1. **Dataset scale.** The benchmark contains 68 items across 20 cases. This is small
+   relative to general-purpose benchmarks. Tier sensitivity is computed on only the nine
+   fully-tiered cases, and per-tier means at Tier 4 (n = 9) carry higher variance than at
+   Tiers 1 and 2 (n = 20). The aggregate patterns are consistent and large in effect size.
+   Per-case figures should be read as indicative.
 
-2. **Case coverage**: All four cases are well-documented sequences from the published
-   literature. Coverage is limited to cases with sufficient published evidence to construct
-   tier-structured items. Edge cases, contested cases, and low-documentation sequences
-   are not yet represented.
+2. **Reference confidence not externally validated.** The reference confidence labels were
+   assigned by the research team following the Tier N → Ref_conf N standard mapping. These
+   labels have not been validated by an independent panel of domain experts in induced
+   seismicity. A formal inter-annotator study with practicing seismologists would strengthen
+   the ground truth.
 
-3. **Reference confidence not externally validated**: The reference confidence labels were
-   assigned by the research team (George Austin, Richard Mach) following the Tier N →
-   Ref_conf N standard mapping. These labels have not been validated by independent
-   domain experts in induced seismicity.
+3. **Evidence descriptions are research-team-authored.** The anonymized evidence
+   descriptions are written by the authors based on published literature, and are not
+   excerpted verbatim from papers. They may not capture every nuance of how evidence is
+   presented in the source publications.
 
-4. **Evidence descriptions are research-team-authored**: The anonymized evidence descriptions
-   are written by the authors based on published literature, not excerpted verbatim from
-   papers. They may not perfectly capture the nuances of how evidence is actually presented
-   in the source publications.
+4. **LLM judge not human-validated.** The automated judge pipeline has not been validated
+   against human annotator scores on a held-out set. The Pearson r > 0.70 threshold
+   described in `docs/evaluation_protocol.md` has not yet been confirmed. Using a Claude
+   model as the judge while also evaluating a Claude model is a potential source of bias.
+   The consistency of the cross-metric ordering and the independent confirmation from the
+   raw confidence-by-tier data partially mitigate this concern. They do not eliminate it.
 
-5. **LLM judge not yet human-validated**: The automated judge pipeline has not been
-   validated against human annotator scores on a held-out set. The Pearson r > 0.70
-   threshold described in `docs/evaluation_protocol.md` has not yet been confirmed.
-   Results should be treated as preliminary pending this validation.
+5. **Anonymization imperfect for well-known cases.** Prague (2011) and Pohang (2017) are
+   well-known cases in the geoscience literature. A model with training exposure to the
+   cases may recognize them from the evidence descriptions despite removal of direct
+   identifiers, which could inflate apparent calibration on those cases.
 
-6. **Anonymization imperfect for well-known cases**: Prague (2011) and Pohang (2017) are
-   well-known cases in the geoscience literature. A knowledgeable reader may identify the
-   cases from the evidence descriptions despite removal of direct identifiers. This could
-   allow models with training data exposure to the cases to respond from prior knowledge
-   rather than from the provided evidence.
-
-7. **Known confidence scale discrepancy**: The POHANG-T1-Q1 item has a documented
-   discrepancy between source materials (slide deck labels Ref_conf = 2; dataset table
-   labels Ref_conf = 1). The Tier 1 → Ref_conf = 1 mapping is used as canonical; this
-   should be resolved through domain expert adjudication.
+6. **Single prompt and decoding setting.** All items use one question phrasing at default
+   decoding. Calibration may shift under chain-of-thought prompting, explicit uncertainty
+   elicitation, or temperature changes. These were not varied in this evaluation.
 
 ---
 
@@ -292,8 +422,8 @@ If you use InducedSeismic-Bench, please cite:
                   in AI-Assisted Induced Seismicity Analysis},
   author       = {Austin, George and Mach, Richard},
   year         = {2026},
-  note         = {Version 0.1.0-draft},
-  howpublished = {\url{https://github.com/george203/InducedSeismic-Bench}}
+  note         = {Version 1.0.0},
+  howpublished = {\url{https://github.com/george203/InducedSeismic-Bench-Dataset}}
 }
 ```
 
@@ -304,4 +434,6 @@ See `CITATION.cff` for structured citation metadata.
 ## License
 
 This dataset is released under [CC BY 4.0](LICENSE). See `LICENSE` for full terms and
-the research-use disclaimer.
+the research-use disclaimer. Outputs from models evaluated on this benchmark are not
+suitable for use in regulatory proceedings, liability determinations, or operational safety
+decisions.
